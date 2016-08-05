@@ -1,0 +1,65 @@
+//- Mixins a usar
+mixin menu_lateral
+	//- .overlay
+	.menulateral-header.height_100.list-unstyled.pull-left
+		.menulateral-header-items
+			.menulateral-items
+				.item
+					a.menu-item(href="#inicio")
+						i.fa.fa-home
+						.menu-text Inicio
+				.item
+					a.menu-item(href="#introduccion")
+						i.fa.fa-user
+						.menu-text Introduccion
+				.item
+					a.menu-item(href="#porqueelegirme")
+						i.fa.fa-star-o
+						.menu-text ¿Por qué elegirme?
+				.item
+					a.menu-item(href="#miTrabajo")
+						i.fa.fa-file-text
+						.menu-text Mi trabajo
+				.item
+					a.menu-item(href="#Contactame")
+						i.fa.fa-envelope
+						.menu-text Contactame
+//- FIN Mixins a us
+
+doctype html
+html(lang="en")
+	head
+		title Portafolio Mery Santos
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(ame="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet" href="css/bootstrap.min.css")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+		link(rel="stylesheet" href="css/style.css")
+		link(rel="stylesheet" href="css/utilitarios.css")
+		script(src='main.js')
+	body.background-all
+		+menu_lateral		
+		#inicio.height_100
+			nav#nav-menu
+				a.underline.pull-right(href="#inicio") Inicio
+				a.underline.pull-right(href="#introduccion") Introduccion
+				a.underline.pull-right(href="#porqueelegirme") ¿Por què elegirme?
+				a.underline.pull-right(href="#miTrabajo") Mi trabajo
+				a.underline.pull-right(href="#Contactame") Contactame
+			BR
+			#hero-section.hero-section.text-center
+				h4 ¿LISTO PARA CONOCERME?
+				h1 MERY SANTOS ZABALAGA
+				i#chevron-down.glyphicon.glyphicon-chevron-down
+		#introduccion.height_100
+			.linea_tiempo.d-ib.width_90.pull-right
+				p LINEA DE TIEMPO
+				//- h4 MERY SANTOS ZABALAGA
+		#porqueelegirme.height_100
+			h4 POR QUE ELEGIRME
+		#miTrabajo.height_100
+			h4 MI TRABAJO
+		#Contactame.height_100
+			h4 CONTACTAME
