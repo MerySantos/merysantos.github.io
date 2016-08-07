@@ -1,4 +1,5 @@
   
+.p-rl{position:relative;}
 .d-b{display: block;}
 .d-ib {
   display: inline-block;
@@ -48,6 +49,7 @@
   margin-right: 4%;
 }
 
+.pd-0{padding: 0;}
 .pd-1 {
   padding: 1%;
 }

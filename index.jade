@@ -1,3 +1,9 @@
+//- insistir,persistir,resistir y nunca desistir
+//- Atraes lo que eres, si quieres una vida increible se una persona increíble
+//- "¿Qué sería de la vida, si no tuviéramos el valor de intentar algo nuevo?" 
+//- mereces lo que sueñas
+//- Se como el lobo, fuerte en la soledad, solidario en el grupo
+//- Si vas a cometer errores, que sean nuevos
 //- Mixins a usar
 mixin menu_lateral
 	//- .overlay
@@ -40,26 +46,41 @@ html(lang="en")
 		link(rel="stylesheet" href="css/utilitarios.css")
 		script(src='main.js')
 	body.background-all
-		+menu_lateral		
-		#inicio.height_100
-			nav#nav-menu
-				a.underline.pull-right(href="#inicio") Inicio
-				a.underline.pull-right(href="#introduccion") Introduccion
-				a.underline.pull-right(href="#porqueelegirme") ¿Por què elegirme?
-				a.underline.pull-right(href="#miTrabajo") Mi trabajo
-				a.underline.pull-right(href="#Contactame") Contactame
-			BR
-			#hero-section.hero-section.text-center
-				h4 ¿LISTO PARA CONOCERME?
-				h1 MERY SANTOS ZABALAGA
-				i#chevron-down.glyphicon.glyphicon-chevron-down
-		#introduccion.height_100
-			.linea_tiempo.d-ib.width_90.pull-right
+		.col-xs-1.lado_izq.pd-0
+			+menu_lateral
+		.col-xs-11.lado_der.pd-0
+			#inicio.height_100.p-r.d-b
+				nav#nav-menu
+					a.underline.pull-right(href="#inicio") Inicio
+					a.underline.pull-right(href="#introduccion") Introduccion
+					a.underline.pull-right(href="#porqueelegirme") ¿Por què elegirme?
+					a.underline.pull-right(href="#miTrabajo") Mi trabajo
+					a.underline.pull-right(href="#Contactame") Contactame
+				BR
+				#hero-section.hero-section.text-center
+					h4 ¿LISTO PARA CONOCERME?
+					h1 MERY SANTOS ZABALAGA
+					i#chevron-down.glyphicon.glyphicon-chevron-down
+			#introduccion.height_100
 				p LINEA DE TIEMPO
-				//- h4 MERY SANTOS ZABALAGA
-		#porqueelegirme.height_100
-			h4 POR QUE ELEGIRME
-		#miTrabajo.height_100
-			h4 MI TRABAJO
-		#Contactame.height_100
-			h4 CONTACTAME
+				.container-fluid
+					.row
+						.col-xs-6.col-md-3
+							a.thumbnail(href="#")
+								img(src="" alt="lugar_nac")
+						.col-xs-6.col-md-3
+							a.thumbnail(href="#")
+								img(src="" alt="estudios_uni")
+						.col-xs-6.col-md-3
+							a.thumbnail(href="#")
+								img(src="" alt="trabajos")
+						.col-xs-6.col-md-3
+							a.thumbnail(href="#")
+								img(src="" alt="lab")		
+					
+			#porqueelegirme.height_100
+				h4 POR QUE ELEGIRME
+			#miTrabajo.height_100
+				h4 MI TRABAJO
+			#Contactame.height_100
+				h4 CONTACTAME

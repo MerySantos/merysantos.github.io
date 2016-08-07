@@ -7,6 +7,9 @@
 .menu_lateral{ height: 100%; }
 .linea_tiempo{ height: 100%; }
 .hero-section{ margin:200px;}
+#inicio{background: url("../img/portada-playa.jpg");}
+
+
 
 /*menu- hover*/
   @import url(//codepen.io/team/codepen/pen/NxwJpr.css);
