@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
-/**{outline:1px solid rgba(255,0,0,0.2);}
-*/.background-all{ background: #fff; }
+*{outline:1px solid rgba(255,0,0,0.2);}
+
+.background-all{ background: #fff; }
 .height_100{ height: 100vh; }
 .width_100{ height: 100vW; }
 .width_90{width: 90%;}
@@ -8,89 +9,165 @@
 .linea_tiempo{ height: 100%; }
 .hero-section{ margin:50% auto; color:#AAA;}
 .hero-section a{}
-#inicio{background: url("../img/luna.jpg") no-repeat 50% 10%;
+#inicio{background: url("../img/portada-playa.jpg") no-repeat 20% 30%; opacity:20%; 
 background-size: cover;}
 
-
-
-/*menu- hover*/
-  @import url(//codepen.io/team/codepen/pen/NxwJpr.css);
-  .underline {
-    border: 2px solid transparent;
+/*.tira-fotos*/
+  .tira-fotos{
+  background: #333 url(../images/black_linen.jpg) repeat top left;
+  font-family: 'Lancelot', Arial, sans-serif;
   }
-  .underline::after {
-    width: 0%;
-    height: 2px;
-    display: block;
-    background-color: #fff;
-    content: " ";
-    position: absolute;
-    top: 34px;
-    left: 50%;
-    -webkit-transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  .letter-container{
+    border-bottom: 1px dashed rgba(255,255,255,0.1);
+    border-top: 1px dashed rgba(255,255,255,0.1);
+    margin: 20px;
+    padding: 40px 10px;
+    font-family: 'Abril Fatface', Arial, sans-serif;
   }
-  .underline:hover::after {
-    width: 100%;
-    height: 2px;
-    display: block;
-    background-color: #fff;
-    content: " ";
-    position: absolute;
-    top: 34px;
-    left: 0;
+  .letter-container h2{
+    text-align: center;
   }
-/*MENULATERAL*/
-  
-  body {font-family: "Roboto", sans-serif;}
-  .menulateral-header{
-    position: fixed;
-    width: 70px;
-    height: 100%;
-    background: #0e0f12;
-    z-index: 2;
-  }  
-  .menulateral-header a {color: #fff;}
-  .menulateral-header a i{font-size: 25px;}
-
-  .menulateral-header .menu-item {
+  .letter-container h2 a{
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+  }
+  .letter-container h2 a span{
+    display: inline-block;
     position: relative;
-    display: block;
-    width: 100%;
-    height: 70px;
-    text-align: center;
-    line-height: 70px;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .menulateral-header .menu-item .menu-text {
-    position: absolute;
-    top: 0;
-    left: -200px;
     width: 200px;
-    /*height: 100px;*/
-    background-color: #198ada;
-    font-size: 18px;
-    text-align: center;
-    background-color: #198ada;/*colormenulateral*/
-    /*transition-duration: 0.3s*/
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .menulateral-header .menu-item:hover {
-    background: #198ada;/*colormenulateral*/
-  }
-
-  .menulateral-header .menu-item:hover .menu-text {
+    height: 140px;
+    background: #000;
+    line-height: 140px;
+    font-size: 120px;
+    margin: 3px;
+    background-position: 50% 0%;
+    background-size: 200px 267px;
     color: #fff;
-    left: 70px;
+    text-shadow: 0px 0px 1px #fff, 2px 2px 5px rgba(0,0,0,0.4);
+    border-color: #fff;
+    border-style: solid;
+    border-width: 10px 10px 45px 10px;
+    -webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
+    -moz-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
+    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
-  .menulateral-header .menu-item:focus {color: #198ada;}
-  .menulateral-header .item.active .menu-item { background: #198ada;}
+  .letter-container h2 a span:before{
+    content:'';
+    position: absolute;
+    width: 220px;
+    height: 195px;
+    top: -10px;
+    left: -10px;
+    background: transparent;
+    background: -moz-linear-gradient(-45deg, rgba(14,14,14,0.32) 0%, rgba(127,127,127,0.21) 18%, rgba(170,170,170,0.11) 34%, rgba(201,201,201,0) 51%, rgba(242,242,242,0.1) 66%, rgba(255,255,255,0.18) 79%, rgba(71,69,69,0.32) 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(14,14,14,0.32)), color-stop(18%,rgba(127,127,127,0.21)), color-stop(34%,rgba(170,170,170,0.11)), color-stop(51%,rgba(201,201,201,0)), color-stop(66%,rgba(242,242,242,0.1)), color-stop(79%,rgba(255,255,255,0.18)), color-stop(100%,rgba(71,69,69,0.32)));
+    background: -webkit-linear-gradient(-45deg, rgba(14,14,14,0.32) 0%,rgba(127,127,127,0.21) 18%,rgba(170,170,170,0.11) 34%,rgba(201,201,201,0) 51%,rgba(242,242,242,0.1) 66%,rgba(255,255,255,0.18) 79%,rgba(71,69,69,0.32) 100%);
+    background: -o-linear-gradient(-45deg, rgba(14,14,14,0.32) 0%,rgba(127,127,127,0.21) 18%,rgba(170,170,170,0.11) 34%,rgba(201,201,201,0) 51%,rgba(242,242,242,0.1) 66%,rgba(255,255,255,0.18) 79%,rgba(71,69,69,0.32) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(14,14,14,0.32) 0%,rgba(127,127,127,0.21) 18%,rgba(170,170,170,0.11) 34%,rgba(201,201,201,0) 51%,rgba(242,242,242,0.1) 66%,rgba(255,255,255,0.18) 79%,rgba(71,69,69,0.32) 100%);
+    background: linear-gradient(-45deg, rgba(14,14,14,0.32) 0%,rgba(127,127,127,0.21) 18%,rgba(170,170,170,0.11) 34%,rgba(201,201,201,0) 51%,rgba(242,242,242,0.1) 66%,rgba(255,255,255,0.18) 79%,rgba(71,69,69,0.32) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#520e0e0e', endColorstr='#52474545',GradientType=1 );
+  }
+  .letter-container h2 a span:nth-child(even){
+    -webkit-transform: rotate(3deg) translateZ(0);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  .letter-container h2 a span:nth-child(odd){
+    -webkit-transform: rotate(-5deg) translateZ(0);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  .letter-container span.char1{
+    background-image: url(../img/1.jpg);
+  }
+  .letter-container span.char2{
+    background-image: url(../img/2.jpg);
+  }
+  .letter-container span.char3{
+    background-image: url(../img/3.jpg);
+  }
+  .letter-container span.char4{
+    background-image: url(../img/4.jpg);
+  }
+  .letter-container span.char5{
+    background-image: url(../img/5.jpg);
+  }
+  .letter-container h2 a:hover span:nth-child(even){
+    -webkit-transform: scale(0.9) rotate(-5deg) translateZ(0);
+    -moz-transform: scale(0.9) rotate(-5deg);
+    -o-transform: scale(0.9) rotate(-5deg);
+    -ms-transform: scale(0.9) rotate(-5deg);
+    transform: scale(0.9) rotate(-5deg);
+  }
+  .letter-container h2 a:hover span:nth-child(odd){
+    -webkit-transform: scale(0.9) rotate(3deg) translateZ(0);
+    -moz-transform: scale(0.9) rotate(3deg);
+    -o-transform: scale(0.9) rotate(3deg);
+    ms-transform: scale(0.9) rotate(3deg);
+    transform: scale(0.9) rotate(3deg);
+  }
+  .letter-container h2 a span:nth-child(even):hover,
+  .letter-container h2 a span:nth-child(odd):hover{
+    -webkit-animation: moveImg 9s linear infinite forwards;
+    -moz-animation: moveImg 9s linear infinite forwards;
+    -o-animation: moveImg 9s linear infinite forwards;
+    -ms-animation: moveImg 9s linear infinite forwards;
+    animation: moveImg 9s linear infinite forwards;
+    color: rgba(255,255,255,0.4);
+    text-shadow:0px 0px 5px rgba(0,0,0,0.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 10;
+    -moz-box-shadow: 2px 2px 20px 4px rgba(0,0,0,0.6), 0px 0px 2px rgba(0,0,0,0.2) inset;
+    -webkit-box-shadow: 2px 2px 20px 4px rgba(0,0,0,0.6), 0px 0px 2px rgba(0,0,0,0.2) inset;
+    box-shadow: 2px 2px 20px 4px rgba(0,0,0,0.6), 0px 0px 2px rgba(0,0,0,0.2) inset;
+  }
+  @-webkit-keyframes moveImg {
+      0%{ 
+      background-position: 50% 0%;
+    }
+    50%{
+      background-position: 50% 100%;
+    }
+    100%{
+      background-position: 50% 0%;
+    }
+  }
+  @-moz-keyframes moveImg {
+      0%{ 
+      background-position: 50% 0%;
+    }
+    50%{
+      background-position: 50% 100%;
+    }
+    100%{
+      background-position: 50% 0%;
+    }
+  }
+  @keyframes moveImg {
+      0%{ 
+      background-position: 50% 0%;
+    }
+    50%{
+      background-position: 50% 100%;
+    }
+    100%{
+      background-position: 50% 0%;
+    }
+  }
 
 
-  
+ 

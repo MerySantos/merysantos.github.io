@@ -79,129 +79,31 @@ html(lang="en")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 		link(rel="stylesheet" href="css/style.css")
 		link(rel="stylesheet" href="css/utilitarios.css")
+		script(type="text/javascript" src="js/jquery-2.2.4.min.js")
 		script(src='main.js')
-	body.background-all
-		.col-xs-1.lado_izq.pd-0
-			+menu_lateral
-		.col-xs-11.lado_der.pd-0
-			#inicio.height_100.p-r.d-b
-				nav#nav-menu
-					a.underline.pull-right(href="#Contactame") Contactame
-					a.underline.pull-right(href="#miTrabajo") Mi trabajo
-					a.underline.pull-right(href="#porqueelegirme") ¿Por què elegirme?
-					a.underline.pull-right(href="#introduccion") Introduccion
-					a.underline.pull-right(href="#inicio") Inicio
-				BR
-				#hero-section.hero-section.text-center
-					h4 ¿LISTO PARA CONOCERME?
-					h1 MERY SANTOS ZABALAGA
-					a(href="#introduccion")
-						i#chevron-down.glyphicon.glyphicon-chevron-down
-			#introduccion.height_100
-				p LINEA DE TIEMPO
-				.container-fluid
-					.row
-						.col-md-5
-							p Hola!, mi nombre es Mery, nací en la ciudad de Camaná, un 23 de Julio.
-						.col-md-2
-							a.thumbnail(href="#")
-									img(src="img/misha peque.jpg" alt="lugar_nac")
-						.col-md-5
-					.row
-						.col-md-5
-						.col-md-2
-							a.thumbnail(href="#")
-									img(src="img/misha y mimi.jpg" alt="lugar_nac")
-						.col-md-5
-							p Me encanta aprender nuevas cosas de forma autodidacta o por otros medios, ya que creo fervientemente que uno nunca deja de aprender.	
-					.row
-						.col-md-5
-							p Por ello estudié la carrera de Ing. de Sistemas y me gradué con tercio superior.	
-						.col-md-2
-							a.thumbnail(href="#")
-									img(src="img/misha perfil.jpg" alt="lugar_nac")
-						.col-md-5
-					.row
-						.col-md-5
-						.col-md-2
-							a.thumbnail(href="#")
-									img(src="img/lab.jpg" alt="lugar_nac")
-						.col-md-5
-							p Pero aun faltaba algo para poder iniciar en esta carrera y lo encontre junto a Laboratoria.	
-					
-			#porqueelegirme.height_100
-				h4 POR QUE ELEGIRME
-					br
-					//- titulos
-					.row.btn-group(role="group")
-						//- ul.nav.nav-pills
-						//- 	li.active(role="presentation") Programacion WEb
-						//- 	li.active(role="presentation") POO
-						//- 	li(role="presentation") Metodologias
-						//- 	li(role="presentation") Programacion WEb
-						.col-md-3.btn.btn-default(type="button") Programacion Web
-						.col-md-3.btn.btn-default(type="button") Programacion Web
-						.col-md-3.btn.btn-default(type="button") Programacion Web
-						.col-md-3.btn.btn-default(type="button") Programacion Web
+		script(type="text/javascript" src="js/jquery.lettering.js")
+		script(type="text/javascript" src="js/jquery.lettering.js")
+		script.
+			$(function() {
+				$("#letter-container h2 a").lettering();
+			});
 						
-						//- .col-md-3(role="presentation") POO
-						//- .col-md-3(role="presentation") Metodologias Usadas
-						//- .col-md-3(role="presentation") ....
+	body.background-all
+		.container.height_100
+			.row
+				.nav
+					a.underline(href="#inicio") Inicio
+					a.underline(href="#introduccion") Introduccion
+					a.underline(href="#porqueelegirme") ¿Por què elegirme?
+					a.underline(href="#miTrabajo") Mi trabajo
+					a.underline(href="#Contactame") Contactame
+			.row.hero-section
+				h1 MERY SANTOS
+				h4 WEB DEVELOPER
+				.tira-fotos
+					#letter-container.letter-container
+						h2
+							a(href="#") Misha
 					
-					.row
-						.col-md-3.thumbnail HTML
-						.col-md-3.thumbnail CSS
-						.col-md-3.thumbnail Js
-						.col-md-3.thumbnail Angular
-					.row
-						.col-md-3.thumbnail HTML
-						.col-md-3.thumbnail CSS
-						.col-md-3.thumbnail Js
-						.col-md-3.thumbnail Angular
-					
-					.row
-						.col-md-3.thumbnail HTML
-						.col-md-3.thumbnail CSS
-						.col-md-3.thumbnail Js
-						.col-md-3.thumbnail Angular
-					.row
-						.col-md-3.thumbnail HTML
-						.col-md-3.thumbnail CSS
-						.col-md-3.thumbnail Js
-						.col-md-3.thumbnail Angular
 
-				
-			#miTrabajo.height_100
-				
-				h4 MI TRABAJO
-				.container-fluid
-					.row
-						.col-md-3 Todos los trabajos
-						.col-md-3 HTML Nativo
-						.col-md-3 Preprocesados (JADE y Saas)
-						.col-md-3 Interacctivos(Js)
-
-					+trabajos("img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......")
-					+trabajos("img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......")
-					+trabajos("img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......")
-
-				
-			#Contactame.height_100
-				h4 CONTACTAME
-				#contact-us
-				.contact
-					.container
-						.row
-						.titulo
-							h1 CONTACT US
-							P
-								em Lorem ipsum dolor sit amet consectetur.
-						.columnas
-							.col-md-6
-								input(type="text", placeholder="YOUR NAME", required)
-								input(type="text", placeholder="YOUR EMAIL", required)
-								input(type="text", placeholder="YOUR PHONE", required)
-							.col-md-6
-								textarea(placeholder="YOUR MESSAGE" row="30")
-					.buton 
-						button.btn.btn-default SEND MESSAGE
+		

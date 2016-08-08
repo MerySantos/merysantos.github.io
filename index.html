@@ -10,215 +10,28 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utilitarios.css">
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
     <script src="main.js"></script>
+    <script type="text/javascript" src="js/jquery.lettering.js"></script>
+    <script type="text/javascript" src="js/jquery.lettering.js"></script>
+    <script>
+      $(function() {
+      	$("#letter-container h2 a").lettering();
+      });
+      			
+    </script>
   </head>
   <body class="background-all">
-    <div class="col-xs-1 lado_izq pd-0">
-      <div class="menulateral-header height_100 list-unstyled pull-left">
-        <div class="menulateral-header-items">
-          <div class="menulateral-items">
-            <div class="item"><a href="#inicio" class="menu-item"><i class="fa fa-home"></i>
-                <div class="menu-text">Inicio</div></a></div>
-            <div class="item"><a href="#introduccion" class="menu-item"><i class="fa fa-user"></i>
-                <div class="menu-text">Introduccion</div></a></div>
-            <div class="item"><a href="#porqueelegirme" class="menu-item"><i class="fa fa-star-o"></i>
-                <div class="menu-text">¿Por qué elegirme?</div></a></div>
-            <div class="item"><a href="#miTrabajo" class="menu-item"><i class="fa fa-file-text"></i>
-                <div class="menu-text">Mi trabajo</div></a></div>
-            <div class="item"><a href="#Contactame" class="menu-item"><i class="fa fa-envelope"></i>
-                <div class="menu-text">Contactame</div></a></div>
-          </div>
-        </div>
+    <div class="container height_100">
+      <div class="row">
+        <div class="nav"><a href="#inicio" class="underline">Inicio</a><a href="#introduccion" class="underline">Introduccion</a><a href="#porqueelegirme" class="underline">¿Por què elegirme?</a><a href="#miTrabajo" class="underline">Mi trabajo</a><a href="#Contactame" class="underline">Contactame</a></div>
       </div>
-    </div>
-    <div class="col-xs-11 lado_der pd-0">
-      <div id="inicio" class="height_100 p-r d-b">
-        <nav id="nav-menu"><a href="#Contactame" class="underline pull-right">Contactame</a><a href="#miTrabajo" class="underline pull-right">Mi trabajo</a><a href="#porqueelegirme" class="underline pull-right">¿Por què elegirme?</a><a href="#introduccion" class="underline pull-right">Introduccion</a><a href="#inicio" class="underline pull-right">Inicio</a></nav>
-        <BR></BR>
-        <div id="hero-section" class="hero-section text-center">
-          <h4>¿LISTO PARA CONOCERME?</h4>
-          <h1>MERY SANTOS ZABALAGA</h1><a href="#introduccion"><i id="chevron-down" class="glyphicon glyphicon-chevron-down"></i></a>
-        </div>
-      </div>
-      <div id="introduccion" class="height_100">
-        <p>LINEA DE TIEMPO</p>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-5">
-              <p>Hola!, mi nombre es Mery, nací en la ciudad de Camaná, un 23 de Julio.</p>
-            </div>
-            <div class="col-md-2"><a href="#" class="thumbnail"><img src="img/misha peque.jpg" alt="lugar_nac"></a></div>
-            <div class="col-md-5"></div>
-          </div>
-          <div class="row">
-            <div class="col-md-5"></div>
-            <div class="col-md-2"><a href="#" class="thumbnail"><img src="img/misha y mimi.jpg" alt="lugar_nac"></a></div>
-            <div class="col-md-5">
-              <p>Me encanta aprender nuevas cosas de forma autodidacta o por otros medios, ya que creo fervientemente que uno nunca deja de aprender.	</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-5">
-              <p>Por ello estudié la carrera de Ing. de Sistemas y me gradué con tercio superior.	</p>
-            </div>
-            <div class="col-md-2"><a href="#" class="thumbnail"><img src="img/misha perfil.jpg" alt="lugar_nac"></a></div>
-            <div class="col-md-5"></div>
-          </div>
-          <div class="row">
-            <div class="col-md-5"></div>
-            <div class="col-md-2"><a href="#" class="thumbnail"><img src="img/lab.jpg" alt="lugar_nac"></a></div>
-            <div class="col-md-5">
-              <p>Pero aun faltaba algo para poder iniciar en esta carrera y lo encontre junto a Laboratoria.	</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="porqueelegirme" class="height_100">
-        <h4>POR QUE ELEGIRME<br>
-          <div role="group" class="row btn-group">
-            <div type="button" class="col-md-3 btn btn-default">Programacion Web</div>
-            <div type="button" class="col-md-3 btn btn-default">Programacion Web</div>
-            <div type="button" class="col-md-3 btn btn-default">Programacion Web</div>
-            <div type="button" class="col-md-3 btn btn-default">Programacion Web</div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 thumbnail">HTML</div>
-            <div class="col-md-3 thumbnail">CSS</div>
-            <div class="col-md-3 thumbnail">Js</div>
-            <div class="col-md-3 thumbnail">Angular</div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 thumbnail">HTML</div>
-            <div class="col-md-3 thumbnail">CSS</div>
-            <div class="col-md-3 thumbnail">Js</div>
-            <div class="col-md-3 thumbnail">Angular</div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 thumbnail">HTML</div>
-            <div class="col-md-3 thumbnail">CSS</div>
-            <div class="col-md-3 thumbnail">Js</div>
-            <div class="col-md-3 thumbnail">Angular</div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 thumbnail">HTML</div>
-            <div class="col-md-3 thumbnail">CSS</div>
-            <div class="col-md-3 thumbnail">Js</div>
-            <div class="col-md-3 thumbnail">Angular</div>
-          </div>
-        </h4>
-      </div>
-      <div id="miTrabajo" class="height_100">
-        <h4>MI TRABAJO</h4>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-3">Todos los trabajos</div>
-            <div class="col-md-3">HTML Nativo</div>
-            <div class="col-md-3">Preprocesados (JADE y Saas)</div>
-            <div class="col-md-3">Interacctivos(Js)</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail"><img src="img/imposible.jpg" alt="PY"/></div>
-              <div class="caption">
-                <h3></h3>
-                <p>descripcion del py ......</p>
-                <p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a><a class="btn"><i href="#" role="button" class="fa fa-eye"></i></a></p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail"><img src="img/imposible.jpg" alt="PY"/></div>
-              <div class="caption">
-                <h3></h3>
-                <p>descripcion del py ......</p>
-                <p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a><a class="btn"><i href="#" role="button" class="fa fa-eye"></i></a></p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail"><img src="img/imposible.jpg" alt="PY"/></div>
-              <div class="caption">
-                <h3></h3>
-                <p>descripcion del py ......</p>
-                <p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a><a class="btn"><i href="#" role="button" class="fa fa-eye"></i></a></p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail"><img src="img/imposible.jpg" alt="PY"/></div>
-              <div class="caption">
-                <h3></h3>
-                <p>descripcion del py ......</p>
-                <p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a><a class="btn"><i href="#" role="button" class="fa fa-eye"></i></a></p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail"><img src="img/imposible.jpg" alt="PY"/></div>
-              <div class="caption">
-                <h3></h3>
-                <p>descripcion del py ......</p>
-                <p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a><a class="btn"><i href="#" role="button" class="fa fa-eye"></i></a></p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail"><img src="img/imposible.jpg" alt="PY"/></div>
-              <div class="caption">
-                <h3></h3>
-                <p>descripcion del py ......</p>
-                <p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a><a class="btn"><i href="#" role="button" class="fa fa-eye"></i></a></p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail"><img src="img/imposible.jpg" alt="PY"/></div>
-              <div class="caption">
-                <h3></h3>
-                <p>descripcion del py ......</p>
-                <p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a><a class="btn"><i href="#" role="button" class="fa fa-eye"></i></a></p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail"><img src="img/imposible.jpg" alt="PY"/></div>
-              <div class="caption">
-                <h3></h3>
-                <p>descripcion del py ......</p>
-                <p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a><a class="btn"><i href="#" role="button" class="fa fa-eye"></i></a></p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail"><img src="img/imposible.jpg" alt="PY"/></div>
-              <div class="caption">
-                <h3></h3>
-                <p>descripcion del py ......</p>
-                <p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a><a class="btn"><i href="#" role="button" class="fa fa-eye"></i></a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="Contactame" class="height_100">
-        <h4>CONTACTAME</h4>
-        <div id="contact-us"></div>
-        <div class="contact">
-          <div class="container">
-            <div class="row"></div>
-            <div class="titulo">
-              <h1>CONTACT US</h1>
-              <P><em>Lorem ipsum dolor sit amet consectetur.</em></P>
-            </div>
-            <div class="columnas">
-              <div class="col-md-6">
-                <input type="text" placeholder="YOUR NAME" required>
-                <input type="text" placeholder="YOUR EMAIL" required>
-                <input type="text" placeholder="YOUR PHONE" required>
-              </div>
-              <div class="col-md-6">
-                <textarea placeholder="YOUR MESSAGE" row="30"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="buton"> 
-            <button class="btn btn-default">SEND MESSAGE</button>
+      <div class="row hero-section">
+        <h1>MERY SANTOS</h1>
+        <h4>WEB DEVELOPER</h4>
+        <div class="tira-fotos">
+          <div id="letter-container" class="letter-container">
+            <h2><a href="#">Misha</a></h2>
           </div>
         </div>
       </div>
