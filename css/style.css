@@ -1,13 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
-*{outline:1px solid rgba(255,0,0,0.2);}
-.background-all{ background: #fff; }
+/**{outline:1px solid rgba(255,0,0,0.2);}
+*/.background-all{ background: #fff; }
 .height_100{ height: 100vh; }
 .width_100{ height: 100vW; }
 .width_90{width: 90%;}
 .menu_lateral{ height: 100%; }
 .linea_tiempo{ height: 100%; }
-.hero-section{ margin:200px;}
-#inicio{background: url("../img/portada-playa.jpg");}
+.hero-section{ margin:50% auto; color:#AAA;}
+.hero-section a{}
+#inicio{background: url("../img/luna.jpg") no-repeat 50% 10%;
+background-size: cover;}
 
 
 

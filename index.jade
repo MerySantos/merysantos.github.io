@@ -31,6 +31,41 @@ mixin menu_lateral
 						i.fa.fa-envelope
 						.menu-text Contactame
 //- FIN Mixins a us
+mixin trabajos(img1,nombrepy1,description1,img2,nombrepy2,description2,img3,nombrepy3,description3)
+	.row
+		.col-sm-6.col-md-4
+			.thumbnail
+				img(src=img1 alt="PY")
+			.caption
+				h3=nombrep1
+				p=description1
+				p
+					a.btn
+						i.fa.fa-github.btn(href="#" role="button")
+					a.btn
+						i.fa.fa-eye(href="#" role="button")
+		.col-sm-6.col-md-4
+			.thumbnail
+				img(src=img2 alt="PY")
+			.caption
+				h3=nombrep2
+				p=description2
+				p
+					a.btn
+						i.fa.fa-github.btn(href="#" role="button")
+					a.btn
+						i.fa.fa-eye(href="#" role="button")
+		.col-sm-6.col-md-4
+			.thumbnail
+				img(src=img3 alt="PY")
+			.caption
+				h3=nombrep3
+				p=description3
+				p
+					a.btn
+						i.fa.fa-github.btn(href="#" role="button")
+					a.btn
+						i.fa.fa-eye(href="#" role="button")
 
 doctype html
 html(lang="en")
@@ -51,36 +86,122 @@ html(lang="en")
 		.col-xs-11.lado_der.pd-0
 			#inicio.height_100.p-r.d-b
 				nav#nav-menu
-					a.underline.pull-right(href="#inicio") Inicio
-					a.underline.pull-right(href="#introduccion") Introduccion
-					a.underline.pull-right(href="#porqueelegirme") ¿Por què elegirme?
-					a.underline.pull-right(href="#miTrabajo") Mi trabajo
 					a.underline.pull-right(href="#Contactame") Contactame
+					a.underline.pull-right(href="#miTrabajo") Mi trabajo
+					a.underline.pull-right(href="#porqueelegirme") ¿Por què elegirme?
+					a.underline.pull-right(href="#introduccion") Introduccion
+					a.underline.pull-right(href="#inicio") Inicio
 				BR
 				#hero-section.hero-section.text-center
 					h4 ¿LISTO PARA CONOCERME?
 					h1 MERY SANTOS ZABALAGA
-					i#chevron-down.glyphicon.glyphicon-chevron-down
+					a(href="#introduccion")
+						i#chevron-down.glyphicon.glyphicon-chevron-down
 			#introduccion.height_100
 				p LINEA DE TIEMPO
 				.container-fluid
 					.row
-						.col-xs-6.col-md-3
+						.col-md-5
+							p Hola!, mi nombre es Mery, nací en la ciudad de Camaná, un 23 de Julio.
+						.col-md-2
 							a.thumbnail(href="#")
-								img(src="" alt="lugar_nac")
-						.col-xs-6.col-md-3
+									img(src="img/misha peque.jpg" alt="lugar_nac")
+						.col-md-5
+					.row
+						.col-md-5
+						.col-md-2
 							a.thumbnail(href="#")
-								img(src="" alt="estudios_uni")
-						.col-xs-6.col-md-3
+									img(src="img/misha y mimi.jpg" alt="lugar_nac")
+						.col-md-5
+							p Me encanta aprender nuevas cosas de forma autodidacta o por otros medios, ya que creo fervientemente que uno nunca deja de aprender.	
+					.row
+						.col-md-5
+							p Por ello estudié la carrera de Ing. de Sistemas y me gradué con tercio superior.	
+						.col-md-2
 							a.thumbnail(href="#")
-								img(src="" alt="trabajos")
-						.col-xs-6.col-md-3
+									img(src="img/misha perfil.jpg" alt="lugar_nac")
+						.col-md-5
+					.row
+						.col-md-5
+						.col-md-2
 							a.thumbnail(href="#")
-								img(src="" alt="lab")		
+									img(src="img/lab.jpg" alt="lugar_nac")
+						.col-md-5
+							p Pero aun faltaba algo para poder iniciar en esta carrera y lo encontre junto a Laboratoria.	
 					
 			#porqueelegirme.height_100
 				h4 POR QUE ELEGIRME
+					br
+					//- titulos
+					.row.btn-group(role="group")
+						//- ul.nav.nav-pills
+						//- 	li.active(role="presentation") Programacion WEb
+						//- 	li.active(role="presentation") POO
+						//- 	li(role="presentation") Metodologias
+						//- 	li(role="presentation") Programacion WEb
+						.col-md-3.btn.btn-default(type="button") Programacion Web
+						.col-md-3.btn.btn-default(type="button") Programacion Web
+						.col-md-3.btn.btn-default(type="button") Programacion Web
+						.col-md-3.btn.btn-default(type="button") Programacion Web
+						
+						//- .col-md-3(role="presentation") POO
+						//- .col-md-3(role="presentation") Metodologias Usadas
+						//- .col-md-3(role="presentation") ....
+					
+					.row
+						.col-md-3.thumbnail HTML
+						.col-md-3.thumbnail CSS
+						.col-md-3.thumbnail Js
+						.col-md-3.thumbnail Angular
+					.row
+						.col-md-3.thumbnail HTML
+						.col-md-3.thumbnail CSS
+						.col-md-3.thumbnail Js
+						.col-md-3.thumbnail Angular
+					
+					.row
+						.col-md-3.thumbnail HTML
+						.col-md-3.thumbnail CSS
+						.col-md-3.thumbnail Js
+						.col-md-3.thumbnail Angular
+					.row
+						.col-md-3.thumbnail HTML
+						.col-md-3.thumbnail CSS
+						.col-md-3.thumbnail Js
+						.col-md-3.thumbnail Angular
+
+				
 			#miTrabajo.height_100
+				
 				h4 MI TRABAJO
+				.container-fluid
+					.row
+						.col-md-3 Todos los trabajos
+						.col-md-3 HTML Nativo
+						.col-md-3 Preprocesados (JADE y Saas)
+						.col-md-3 Interacctivos(Js)
+
+					+trabajos("img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......")
+					+trabajos("img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......")
+					+trabajos("img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......","img/imposible.jpg","Titulo del py","descripcion del py ......")
+
+				
 			#Contactame.height_100
 				h4 CONTACTAME
+				#contact-us
+				.contact
+					.container
+						.row
+						.titulo
+							h1 CONTACT US
+							P
+								em Lorem ipsum dolor sit amet consectetur.
+						.columnas
+							.col-md-6
+								input(type="text", placeholder="YOUR NAME", required)
+								input(type="text", placeholder="YOUR EMAIL", required)
+								input(type="text", placeholder="YOUR PHONE", required)
+							.col-md-6
+								textarea(placeholder="YOUR MESSAGE" row="30")
+					.buton 
+						button.btn.btn-default SEND MESSAGE
