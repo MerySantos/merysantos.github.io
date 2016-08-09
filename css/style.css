@@ -1,22 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
 *{outline:1px solid rgba(255,0,0,0.2);}
-
 .background-all{ background: #fff; }
 .height_100{ height: 100vh; }
-.width_100{ height: 100vW; }
-.width_90{width: 90%;}
-.menu_lateral{ height: 100%; }
-.linea_tiempo{ height: 100%; }
-.hero-section{ margin:50% auto; color:#AAA;}
-.hero-section a{}
-#inicio{background: url("../img/portada-playa.jpg") no-repeat 20% 30%; opacity:20%; 
-background-size: cover;}
+/*.hero-section{ margin:50% auto; color:#AAA;}*/
+#inicio{background: url("../img/fondo-corcho.png")  center;background-size: cover;}
+/*#inicio{background: url("../img/.jpg") no-repeat 20% 30%; opacity:20%; 
+background-size: cover;}*/
 
 /*.tira-fotos*/
-  .tira-fotos{
+ /* .tira-fotos{
   background: #333 url(../images/black_linen.jpg) repeat top left;
   font-family: 'Lancelot', Arial, sans-serif;
-  }
+  }*/
+  #hero-section{position: relative;bottom: 0;}
   .letter-container{
     border-bottom: 1px dashed rgba(255,255,255,0.1);
     border-top: 1px dashed rgba(255,255,255,0.1);
