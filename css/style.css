@@ -7,7 +7,7 @@ body{ background: #F2EBC9; font-family: ;color:;}
 #inicio{background: url("../img/fondo-corcho-new.png") bottom;background-size: cover;}
 .hero-section{
   margin-top: 5%;
-  margin-bottom: 2%; }
+  margin-bottom: 3%; }
 .hero-section h1{ 
   margin:8% 10% 0;
   font-family: 'Rhodium Libre',serif;
