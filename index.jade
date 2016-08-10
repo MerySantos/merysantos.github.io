@@ -5,31 +5,7 @@
 //- Se como el lobo, fuerte en la soledad, solidario en el grupo
 //- Si vas a cometer errores, que sean nuevos
 //- Mixins a usar
-mixin menu_lateral
-	//- .overlay
-	.menulateral-header.height_100.list-unstyled.pull-left
-		.menulateral-header-items
-			.menulateral-items
-				.item
-					a.menu-item(href="#inicio")
-						i.fa.fa-home
-						.menu-text Inicio
-				.item
-					a.menu-item(href="#introduccion")
-						i.fa.fa-user
-						.menu-text Introduccion
-				.item
-					a.menu-item(href="#porqueelegirme")
-						i.fa.fa-star-o
-						.menu-text ¿Por qué elegirme?
-				.item
-					a.menu-item(href="#miTrabajo")
-						i.fa.fa-file-text
-						.menu-text Mi trabajo
-				.item
-					a.menu-item(href="#Contactame")
-						i.fa.fa-envelope
-						.menu-text Contactame
+
 //- FIN Mixins a us
 mixin trabajos(img1,nombrepy1,description1,img2,nombrepy2,description2,img3,nombrepy3,description3)
 	.row
@@ -79,6 +55,13 @@ html(lang="en")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 		link(rel="stylesheet" href="css/style.css")
 		link(rel="stylesheet" href="css/utilitarios.css")
+		//- Titulo
+		link(href='https://fonts.googleapis.com/css?family=Rhodium+Libre' rel='stylesheet' type='text/css') 
+		//- Handwriting
+		link(href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet' type='text/css')
+		<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'> 
+		
+		
 		script(type="text/javascript" src="js/jquery-2.2.4.min.js")
 		script(src='main.js')
 		script(type="text/javascript" src="js/jquery.lettering.js")
@@ -89,22 +72,91 @@ html(lang="en")
 			});
 						
 	body.background-all
-		.section#inicio
-			.container.height_100
-				.row
-					.nav
-						a.underline(href="#inicio") Inicio
+		section#inicio
+			nav.text-center
+				ul.list-inline
+					li
+						a.underline(href="#inicio") INICIO
+					li
 						a.underline(href="#introduccion") Introduccion
+					li
 						a.underline(href="#porqueelegirme") ¿Por què elegirme?
+					li
 						a.underline(href="#miTrabajo") Mi trabajo
-						a.underline(href="#Contactame") Contactame
+					li
+						a.underline(href="#contactame") Contactame
+
+			.container.height_100
 				.row.hero-section.text-center
 					h1 MERY SANTOS
 					h4 WEB DEVELOPER
 					//- Tira-fotos
 					#letter-container.letter-container
 						h2
-							a(href="#") Misha
-					
+							a(href="#") .....
+		section#introduccion
+			.container
+				.row
+					.col-md-6
+						p foto
+					.col-md-6
+						p descripcion
+		section#porqueelegirme
+			.container
+				.row
+					.col-md-6
+						p foto
+					.col-md-6
+						p descripcion
+		section#mitrabajo
+			.container
+				.row
+					.col-md-6
+						p foto
+					.col-md-6
+						p descripcion
+		section#contactame
+			.container
+				.row
+					.col-md-6
+						p foto
+					.col-md-6
+						p descripcion
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br		
 
 		
