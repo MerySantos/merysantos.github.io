@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
-/**{outline:1px solid rgba(255,0,0,0.2);}*/
+*{outline:1px solid rgba(255,0,0,0.2);}
 
 body{ background: url(../img/fondo-corcho2.png); font-family: ;color:;}
 .height_100{ height: 100vh; }
