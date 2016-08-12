@@ -4,44 +4,6 @@
 //- mereces lo que sueñas
 //- Se como el lobo, fuerte en la soledad, solidario en el grupo
 //- Si vas a cometer errores, que sean nuevos
-//- Mixins a usar
-
-//- FIN Mixins a us
-mixin trabajos(img1,nombrepy1,description1,img2,nombrepy2,description2,img3,nombrepy3,description3)
-	.row
-		.col-sm-6.col-md-4
-			.thumbnail
-				img(src=img1 alt="PY")
-			.caption
-				h3=nombrep1
-				p=description1
-				p
-					a.btn
-						i.fa.fa-github.btn(href="#" role="button")
-					a.btn
-						i.fa.fa-eye(href="#" role="button")
-		.col-sm-6.col-md-4
-			.thumbnail
-				img(src=img2 alt="PY")
-			.caption
-				h3=nombrep2
-				p=description2
-				p
-					a.btn
-						i.fa.fa-github.btn(href="#" role="button")
-					a.btn
-						i.fa.fa-eye(href="#" role="button")
-		.col-sm-6.col-md-4
-			.thumbnail
-				img(src=img3 alt="PY")
-			.caption
-				h3=nombrep3
-				p=description3
-				p
-					a.btn
-						i.fa.fa-github.btn(href="#" role="button")
-					a.btn
-						i.fa.fa-eye(href="#" role="button")
 
 doctype html
 html(lang="en")
@@ -53,8 +15,8 @@ html(lang="en")
 		link(rel="stylesheet" href="css/bootstrap.min.css")
 		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
-		link(rel="stylesheet" href="css/style.css")
 		link(rel="stylesheet" href="css/utilitarios.css")
+		link(rel="stylesheet" href="css/style.css")
 		//- Titulo
 		link(href='https://fonts.googleapis.com/css?family=Rhodium+Libre' rel='stylesheet' type='text/css') 
 		//- Handwriting
@@ -89,45 +51,50 @@ html(lang="en")
 					li
 						a.underline(href="#contactame") CONTACT ME
 
-			.container.height_100
+			.container
 				.row.hero-section.text-center
 					h1 MERY SANTOS
 					h4 WEB DEVELOPER
 					//- Tira-fotos
+
 					#letter-container.letter-container
 						h2
 							a(href="#") misha
 		section#introduccion
 			.container
 				.row
-					.col-md-4.foto-about-me#foto-about-me.text-center
+					.col-md-5.foto-about-me#foto-about-me.text-center
 						a .
-					.col-md-8.fondo-about-me
-						.texto-about-me
+					.col-md-7
+						.texto-about-me.TEXT-CENTER.fondo-about-me
 							p Hola!, mi nombre es Mery Santos Zabalaga, nací un 23 de Julio en la ciudad de Camaná (Arequipa), y estudié la carrera de Ing. de Sistemas.
 							p Me considero una persona que aprende rápido, autodidacta y con ganas de no quedarse en lo mismo, es por ello que me anime a participar en Laboratoria para obtener lo mejor de mi.
-		section#porqueelegirme.height_100
+		section#porqueelegirme
 			.container
 				.row
-					.col-md-4
-						.row
-							.col-md-1
+					.col-md-3
+						.row.habilidad1.medidas-hab
+							.col-md-12
 								p 
 									ul Programacion Web
 										li HTML + CSS
 										li JS
 										li JQuery
 										li Jade + Sass
-						.row
+						.row.habilidad2.medidas-hab
 							.col-md-12
 								p
 									ul Programacion Orientada a Objetos
 										li Visual Basic
 										li Java
-					.col-md-4
-						p papel-enorme
-					.col-md-4
-						.row
+					
+
+					.col-md-6.medidas-hoja-hab.text-center
+						.habilidad-papel
+							p papel-enorme
+					
+					.col-md-3
+						.row.habilidad3.medidas-hab
 							.col-md-12
 								p 
 									//- Stick
@@ -136,7 +103,7 @@ html(lang="en")
 										li Autocad
 										li NodeJs
 										li Angular
-						.row
+						.row.habilidad4.medidas-hab
 							.col-md-12
 								p 
 									ul Otros
@@ -144,7 +111,8 @@ html(lang="en")
 										li Autocad
 										li NodeJs
 										li Angular
-				
+					
+
 		section#mitrabajo.height_100
 			.container
 				.row

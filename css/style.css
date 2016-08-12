@@ -7,19 +7,20 @@ p{font-family:'Arimo',sans-serif ;color:; font-size: 1.5em;}
 .height_100{ height: 100vh; }
 
 /*Inicio*/
+  #inicio .container{}
   .hero-section{
     margin-top: 5%;
     margin-bottom: 3%;}
 
   .hero-section h1{ 
-    margin:8% 10% 0;
+    margin:8% auto 0;
     font-family: 'Rhodium Libre',serif;
     font-size: 6.5em; }
 
   .hero-section h4{
     font-family: 'Arimo',sans-serif-serif;
     font-size: 1.8em;
-    margin: 0 3% 3%; }
+    margin: 0 auto 3%; }
 
   nav{
     position: fixed;
@@ -185,9 +186,9 @@ p{font-family:'Arimo',sans-serif ;color:; font-size: 1.5em;}
   }
 
 /*Aboutme*/
-  #introduccion {padding: 12% 0;}
+  #introduccion {padding: 11% 0;}
   #introduccion #foto-about-me a span{
-    width: 80%;
+    width: 70%;
     height: 400px;
     background-size: cover;
     /*background-size: 250px 467px;*/}
@@ -196,16 +197,26 @@ p{font-family:'Arimo',sans-serif ;color:; font-size: 1.5em;}
     display:none;}
   #introduccion #foto-about-me a span.char1{
     background-image: url(../img/4.jpg);
-    margin: 40% 5%;
+    margin: 15% 5%;
    }
   #introduccion .fondo-about-me{
-    /*width:100%;*/
     background-image: url(../img/fondo-texto-about-me3.png) ;
     background-size:cover; 
-    height: 600px;
+    height: 500px;
   }
   #introduccion .texto-about-me{
-    margin:25% 5%;
-    padding: auto 20em;
-    font-size: 1.2em;
+    /*margin*/:22% 5%;
+    padding: 20% 15%;
+    font-size: 1.1em;
   }
+
+/*Habilidades*/
+  .medidas-hab{height: 280px;}
+  .medidas-hoja-hab{height: 650px;}
+  #porqueelegirme .container>.row{ margin: 10% 0; }
+  #porqueelegirme .container>.row.col{ margin: 10% 0; }
+  #porqueelegirme .habilidad1{background: url(../img/hab1.png) ;background-size: cover;}
+  #porqueelegirme .habilidad2 {background: url(../img/hab2.png);background-size: cover;}
+  #porqueelegirme .habilidad3 {background: url(../img/hab3.png);background-size: cover;}
+  #porqueelegirme .habilidad4{background: url(../img/hab4.png);background-size: cover;}
+  #porqueelegirme .habilidad-papel{width:80%; height:90%;background: url(../img/fondo-hab.png);background-size: cover;}
