@@ -70,21 +70,24 @@ html(lang="en")
 			$(function() {
 				$("#letter-container h2 a").lettering();
 			});
+			$(function() {
+				$("#introduccion #foto-about-me a").lettering();
+			});
 						
 	body.background-all
 		section#inicio
 			nav.text-center
 				ul.list-inline
 					li
-						a.underline(href="#inicio") INICIO
+						a.underline(href="#inicio") HOME
 					li
-						a.underline(href="#introduccion") Introduccion
+						a.underline(href="#introduccion") ABOUT ME
 					li
-						a.underline(href="#porqueelegirme") ¿Por què elegirme?
+						a.underline(href="#porqueelegirme") ¿WHY CHOOSE ME?
 					li
-						a.underline(href="#miTrabajo") Mi trabajo
+						a.underline(href="#miTrabajo") MY WORK
 					li
-						a.underline(href="#contactame") Contactame
+						a.underline(href="#contactame") CONTACT ME
 
 			.container.height_100
 				.row.hero-section.text-center
@@ -94,48 +97,109 @@ html(lang="en")
 					#letter-container.letter-container
 						h2
 							a(href="#") misha
-		section#introduccion.height_100
+		section#introduccion
 			.container
 				.row
-					.col-md-6
-						p foto
-					.col-md-6
-						p descripcion
+					.col-md-4.foto-about-me#foto-about-me.text-center
+						a .
+					.col-md-8.fondo-about-me
+						.texto-about-me
+							p Hola!, mi nombre es Mery Santos Zabalaga, nací un 23 de Julio en la ciudad de Camaná (Arequipa), y estudié la carrera de Ing. de Sistemas.
+							p Me considero una persona que aprende rápido, autodidacta y con ganas de no quedarse en lo mismo, es por ello que me anime a participar en Laboratoria para obtener lo mejor de mi.
 		section#porqueelegirme.height_100
-			.container
-				.row
-					.col-md-4
-						p foto + stick
-					.col-md-4
-						p foto+stick
-					.col-md-4
-						p foto+stick
-		section#mitrabajo.height_100
 			.container
 				.row
 					.col-md-4
 						.row
 							.col-md-1
-								p primer trabajo
+								p 
+									ul Programacion Web
+										li HTML + CSS
+										li JS
+										li JQuery
+										li Jade + Sass
 						.row
 							.col-md-12
-								p segundo trabajo
+								p
+									ul Programacion Orientada a Objetos
+										li Visual Basic
+										li Java
 					.col-md-4
 						p papel-enorme
 					.col-md-4
 						.row
 							.col-md-12
-								p tercer trabajo
+								p 
+									//- Stick
+									ul Otros
+										li Wordpress
+										li Autocad
+										li NodeJs
+										li Angular
 						.row
 							.col-md-12
-								p cuarto trabajo
+								p 
+									ul Otros
+										li Wordpress
+										li Autocad
+										li NodeJs
+										li Angular
+				
+		section#mitrabajo.height_100
+			.container
+				.row
+					.col-md-4
+						p foto trabajo1
+						//- Stick
+						div
+							p Nombre PY:<span> PY1</span>
+							p Descripcion:<span> lalalalalala</span>
+							a.btn
+								i.fa.fa-github.btn(href="#" role="button")
+
+
+				
+
+					.col-md-4
+						p foto trabajo1
+						//- Stick
+						div
+							p Nombre PY:<span> PY1</span>
+							p Descripcion:<span> lalalalalala</span>
+							a.btn
+								i.fa.fa-github.btn(href="#" role="button")
+						
+					.col-md-4
+						p foto trabajo1
+						//- Stick
+						div
+							p Nombre PY:<span> PY1</span>
+							p Descripcion:<span> lalalalalala</span>
+							a.btn
+								i.fa.fa-github.btn(href="#" role="button")
+					.col-md-4
+						p foto trabajo1
+						//- Stick
+						div
+							p Nombre PY:<span> PY1</span>
+							p Descripcion:<span> lalalalalala</span>
+							a.btn
+								i.fa.fa-github.btn(href="#" role="button")
+						
+				
 		section#contactame.height_100
 			.container
 				.row
-					.col-md-6
+					.col-md-8
+						.texto-contactame
+							p Ya me conociste un poco más, ¡Ahora si! ¿Que proyecto empezaremos juntos?
+							p Gmail: rymesz@gmail.com
 						p foto
-					.col-md-6
-						p descripcion
+					.col-md-4
+						a.btn
+								i.fa.fa-twitter.btn(href="#" role="button")
+						a.btn
+								i.fa.fa-linkedin.btn(href="#" role="button")
 					
 
 		

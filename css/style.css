@@ -1,43 +1,43 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
-*{outline:1px solid rgba(255,0,0,0.2);}
+*{outline:1px solid rgba(255,0,0,0.8);}
 
 body{ background: url(../img/fondo-corcho2.png); font-family: ;color:;}
+p{font-family:'Arimo',sans-serif ;color:; font-size: 1.5em;}
+
 .height_100{ height: 100vh; }
-/*.hero-section{ margin:50% auto; color:#AAA;}*/
-/*#inicio{background-size: cover;}*/
-.hero-section{
-  margin-top: 5%;
-  margin-bottom: 3%; }
-.hero-section h1{ 
-  margin:8% 10% 0;
-  font-family: 'Rhodium Libre',serif;
-  font-size: 6.5em; }
 
-.hero-section h4{
-  font-family: 'Arimo',sans-serif-serif;
-  font-size: 1.8em;
-  margin: 0 3% 3%; }
+/*Inicio*/
+  .hero-section{
+    margin-top: 5%;
+    margin-bottom: 3%;}
 
-nav{
-  position: fixed;
-  width: 100%;
-  margin-top: 1%;
-  z-index: 1000;
-  }
+  .hero-section h1{ 
+    margin:8% 10% 0;
+    font-family: 'Rhodium Libre',serif;
+    font-size: 6.5em; }
 
-nav li{
-  padding: 1.5%;
-  background:#271F2E;
-   /*background: url("../img/cinta2.png"); */
-   background-size:cover;width:18%; 
-   height: 100%;}
+  .hero-section h4{
+    font-family: 'Arimo',sans-serif-serif;
+    font-size: 1.8em;
+    margin: 0 3% 3%; }
 
-nav a{
-  color:#A4A680;
-  font-family: 'Arimo',sans-serif-serif;
-  font-size: 1.2em;
-  text-transform: uppercase;}
+  nav{
+    position: fixed;
+    width: 100%;
+    margin-top: 1%;
+    z-index: 1000;}
 
+  nav li{
+    padding: 1.5%;
+    background:#271F2E;
+    background-size:cover;width:18%; 
+    height: 100%;}
+
+  nav a{
+    color:#A4A680;
+    font-family: 'Arimo',sans-serif-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;}
 
 /*.tira-fotos*/
 #hero-section{position: relative;bottom: 0;}
@@ -50,7 +50,7 @@ nav a{
     position:relative;
     bottom: 0;
   }
-  .letter-container h2 a span{
+  .letter-container h2 a span,#introduccion #foto-about-me a span{
     display: inline-block;
     position: relative;
     width: 200px;
@@ -66,7 +66,6 @@ nav a{
     -moz-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
     box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
     -webkit-transition: all 0.3s ease-in-out;
-  
   }
 
   .letter-container h2 a span:before{
@@ -93,7 +92,7 @@ nav a{
     -ms-transform: rotate(-5deg);
     transform: rotate(-5deg);
   }
-  .letter-container h2 a span div{
+  .letter-container h2 a span div,#introduccion #foto-about-me a span div{
     position:relative;
     top:-23%;
     left:50%;
@@ -116,6 +115,8 @@ nav a{
   .letter-container span.char5{
     background-image: url(../img/5.jpg);
   }
+
+  
   .letter-container h2 a:hover span:nth-child(even){
     -webkit-transform: scale(0.9) rotate(-5deg) translateZ(0);
     -moz-transform: scale(0.9) rotate(-5deg);
@@ -183,5 +184,28 @@ nav a{
     }
   }
 
+/*Aboutme*/
+  #introduccion {padding: 12% 0;}
+  #introduccion #foto-about-me a span{
+    width: 80%;
+    height: 400px;
+    background-size: cover;
+    /*background-size: 250px 467px;*/}
 
- 
+  #introduccion #foto-about-me a span div{
+    display:none;}
+  #introduccion #foto-about-me a span.char1{
+    background-image: url(../img/4.jpg);
+    margin: 40% 5%;
+   }
+  #introduccion .fondo-about-me{
+    /*width:100%;*/
+    background-image: url(../img/fondo-texto-about-me3.png) ;
+    background-size:cover; 
+    height: 600px;
+  }
+  #introduccion .texto-about-me{
+    margin:25% 5%;
+    padding: auto 20em;
+    font-size: 1.2em;
+  }
