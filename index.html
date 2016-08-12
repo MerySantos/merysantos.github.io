@@ -20,6 +20,9 @@
       $(function() {
       	$("#letter-container h2 a").lettering();
       });
+      $(function() {
+      	$("#introduccion #foto-about-me a").lettering();
+      });
       			
     </script>
   </head>
@@ -27,11 +30,11 @@
     <section id="inicio">
       <nav class="text-center">
         <ul class="list-inline">
-          <li><a href="#inicio" class="underline">INICIO</a></li>
-          <li><a href="#introduccion" class="underline">Introduccion</a></li>
-          <li><a href="#porqueelegirme" class="underline">¿Por què elegirme?</a></li>
-          <li><a href="#miTrabajo" class="underline">Mi trabajo</a></li>
-          <li><a href="#contactame" class="underline">Contactame</a></li>
+          <li><a href="#inicio" class="underline">HOME</a></li>
+          <li><a href="#introduccion" class="underline">ABOUT ME</a></li>
+          <li><a href="#porqueelegirme" class="underline">¿WHY CHOOSE ME?</a></li>
+          <li><a href="#miTrabajo" class="underline">MY WORK</a></li>
+          <li><a href="#contactame" class="underline">CONTACT ME</a></li>
         </ul>
       </nav>
       <div class="container height_100">
@@ -44,14 +47,15 @@
         </div>
       </div>
     </section>
-    <section id="introduccion" class="height_100">
+    <section id="introduccion">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <p>foto</p>
-          </div>
-          <div class="col-md-6">
-            <p>descripcion</p>
+          <div id="foto-about-me" class="col-md-4 foto-about-me text-center"><a>.</a></div>
+          <div class="col-md-8 fondo-about-me">
+            <div class="texto-about-me">
+              <p>Hola!, mi nombre es Mery Santos Zabalaga, nací un 23 de Julio en la ciudad de Camaná (Arequipa), y estudié la carrera de Ing. de Sistemas.</p>
+              <p>Me considero una persona que aprende rápido, autodidacta y con ganas de no quedarse en lo mismo, es por ello que me anime a participar en Laboratoria para obtener lo mejor de mi.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -60,29 +64,26 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <p>foto + stick</p>
-          </div>
-          <div class="col-md-4">
-            <p>foto+stick</p>
-          </div>
-          <div class="col-md-4">
-            <p>foto+stick</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="mitrabajo" class="height_100">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
             <div class="row">
               <div class="col-md-1">
-                <p>primer trabajo</p>
+                <p> 
+                  <ul>Programacion Web
+                    <li>HTML + CSS</li>
+                    <li>JS</li>
+                    <li>JQuery</li>
+                    <li>Jade + Sass</li>
+                  </ul>
+                </p>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                <p>segundo trabajo</p>
+                <p>
+                  <ul>Programacion Orientada a Objetos
+                    <li>Visual Basic</li>
+                    <li>Java</li>
+                  </ul>
+                </p>
               </div>
             </div>
           </div>
@@ -92,13 +93,61 @@
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <p>tercer trabajo</p>
+                <p> 
+                  <ul>Otros
+                    <li>Wordpress</li>
+                    <li>Autocad</li>
+                    <li>NodeJs</li>
+                    <li>Angular</li>
+                  </ul>
+                </p>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                <p>cuarto trabajo</p>
+                <p> 
+                  <ul>Otros
+                    <li>Wordpress</li>
+                    <li>Autocad</li>
+                    <li>NodeJs</li>
+                    <li>Angular</li>
+                  </ul>
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mitrabajo" class="height_100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p>foto trabajo1</p>
+            <div>
+              <p>Nombre PY:<span> PY1</span></p>
+              <p>Descripcion:<span> lalalalalala</span></p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p>foto trabajo1</p>
+            <div>
+              <p>Nombre PY:<span> PY1</span></p>
+              <p>Descripcion:<span> lalalalalala</span></p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p>foto trabajo1</p>
+            <div>
+              <p>Nombre PY:<span> PY1</span></p>
+              <p>Descripcion:<span> lalalalalala</span></p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p>foto trabajo1</p>
+            <div>
+              <p>Nombre PY:<span> PY1</span></p>
+              <p>Descripcion:<span> lalalalalala</span></p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a>
             </div>
           </div>
         </div>
@@ -107,12 +156,14 @@
     <section id="contactame" class="height_100">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-8">
+            <div class="texto-contactame">
+              <p>Ya me conociste un poco más, ¡Ahora si! ¿Que proyecto empezaremos juntos?</p>
+              <p>Gmail: rymesz@gmail.com</p>
+            </div>
             <p>foto</p>
           </div>
-          <div class="col-md-6">
-            <p>descripcion</p>
-          </div>
+          <div class="col-md-4"><a class="btn"><i href="#" role="button" class="fa fa-twitter btn"></i></a><a class="btn"><i href="#" role="button" class="fa fa-linkedin btn"></i></a></div>
         </div>
       </div>
     </section>
