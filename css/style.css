@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
-*{outline:1px solid rgba(255,0,0,0.8);}
+/**{outline:1px solid rgba(255,0,0,0.8);}*/
 
 body{ background: url(../img/fondo-corcho2.png); font-family: ;color:;}
 p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
@@ -239,9 +239,22 @@ p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
 
 /*Mis trabajos*/
   #miTrabajo .trabajos>a span{
-    width: 280px;
+    width: 80%;
     height: 350px;
-    background-size: cover;
-    background-image: url(../img/4.jpg);
     margin: 15% 5%;
+    background-size: cover;
     border-width: 10px 10px 65px 10px;}
+  #miTrabajo i{font-size:3em ;color:brown;}
+  #miTrabajo .titulo-trabajo{font-weight: bolder;}
+  #miTrabajo .trabajo1>a span{background-image: url(../img/cp-trabajo1.jpg);}
+  #miTrabajo .trabajo2>a span{background-image: url(../img/cp-trabajo2.jpg);}
+  #miTrabajo .trabajo3>a span{background-image: url(../img/cp-trabajo3.jpg);}
+  #miTrabajo .trabajo1>div{padding: 15% 10%;background-image: url(../img/trabajo1.png);background-size: cover; width: 300px; height: 300px;left: -12%;top: -200px;}
+  #miTrabajo .trabajo2>div{padding: 15% 10%;background-image: url(../img/trabajo2.png);background-size: cover; width: 300px; height: 300px;left: 12%;top: -200px;}
+  #miTrabajo .trabajo3>div{padding: 17% 11%;background-image: url(../img/trabajo3.png);background-size: cover; width: 300px; height: 300px;left: 20%;top: -200px;}
+  #miTrabajo .container>.row { margin:8% auto; }
+ /* #miTrabajo .texto-trabajo1>div{ top:40%; }
+  #miTrabajo .texto-trabajo2>div{}
+  #miTrabajo .texto-trabajo3>div{}*/
+
+
