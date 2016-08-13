@@ -206,11 +206,18 @@ p{font-family:'Arimo',sans-serif ;color:; font-size: 1.5em;}
   }
 
 /*Habilidades*/
-  .medidas-hab{width:320px;height: 300px; margin: auto}
+  .medidas-hab{width:300px;height: 280px; margin: auto}
   #porqueelegirme .container>.row{ margin: 10% 0; }
   #porqueelegirme .container>.row.col{ margin: 10% 0; }
   #porqueelegirme .habilidad1{background: url(../img/hab1.png) ;background-size: cover;}
   #porqueelegirme .habilidad2 {background: url(../img/hab2.png);background-size: cover;}
   #porqueelegirme .habilidad3 {background: url(../img/hab3.png);background-size: cover;}
   #porqueelegirme .habilidad4{background: url(../img/hab4.png);background-size: cover;}
-  #porqueelegirme .habilidad-papel{width:80%; height:90%;background: url(../img/fondo-hab.png);background-size: cover;}
+  #porqueelegirme .habilidad-papel{margin:auto;width:450px; height:600px;background: url(../img/fondo-hab.png);background-size: cover;}
+  #porqueelegirme .habilidad-papel p {top:40%; transform: rotate(5deg);}
+  
+  #porqueelegirme ul{ width: 240px;}
+  #porqueelegirme .habilidad1 ul{ top:40%; left:12%;transform: rotate(-5deg);}
+  #porqueelegirme .habilidad2 ul{ top:40%; left:10%;transform: rotate(5deg);}
+  #porqueelegirme .habilidad3 ul{ top:40%; left:10%;transform: rotate(10deg);}
+  #porqueelegirme .habilidad4 ul{ top:40%; left:6%;}
