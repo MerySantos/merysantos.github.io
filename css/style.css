@@ -188,31 +188,25 @@ p{font-family:'Arimo',sans-serif ;color:; font-size: 1.5em;}
 /*Aboutme*/
   #introduccion {padding: 11% 0;}
   #introduccion #foto-about-me a span{
-    width: 70%;
+    width: 300px;
     height: 400px;
     background-size: cover;
+    background-image: url(../img/4.jpg);
+    margin: 15% 5%;
     /*background-size: 250px 467px;*/}
 
   #introduccion #foto-about-me a span div{
     display:none;}
-  #introduccion #foto-about-me a span.char1{
-    background-image: url(../img/4.jpg);
-    margin: 15% 5%;
-   }
   #introduccion .fondo-about-me{
     background-image: url(../img/fondo-texto-about-me3.png) ;
     background-size:cover; 
-    height: 500px;
-  }
-  #introduccion .texto-about-me{
-    /*margin*/:22% 5%;
+    height: 550px;
     padding: 20% 15%;
     font-size: 1.1em;
   }
 
 /*Habilidades*/
-  .medidas-hab{height: 280px;}
-  .medidas-hoja-hab{height: 650px;}
+  .medidas-hab{width:320px;height: 300px; margin: auto}
   #porqueelegirme .container>.row{ margin: 10% 0; }
   #porqueelegirme .container>.row.col{ margin: 10% 0; }
   #porqueelegirme .habilidad1{background: url(../img/hab1.png) ;background-size: cover;}
