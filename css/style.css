@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
-/**{outline:1px solid rgba(255,0,0,0.8);}*/
+*{outline:1px solid rgba(255,0,0,0.8);}
 
 body{ background: url(../img/fondo-corcho2.png); font-family: ;color:;}
 p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
@@ -51,7 +51,8 @@ p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
     position:relative;
     bottom: 0;
   }
-  .letter-container h2 a span,#introduccion #foto-about-me a span{
+  /*-------------TODAS LAS FOTOS---------------*/
+  .letter-container h2 a span,#introduccion #foto-about-me a span,#miTrabajo .trabajos>a span{
     display: inline-block;
     position: relative;
     width: 200px;
@@ -235,3 +236,12 @@ p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
   #porqueelegirme .habilidad2 ul{ top:40%; left:11%;}
   #porqueelegirme .habilidad3 ul{ top:40%; left:13%;}
   #porqueelegirme .habilidad4 ul{ top:40%; left:7%;}
+
+/*Mis trabajos*/
+  #miTrabajo .trabajos>a span{
+    width: 280px;
+    height: 350px;
+    background-size: cover;
+    background-image: url(../img/4.jpg);
+    margin: 15% 5%;
+    border-width: 10px 10px 65px 10px;}

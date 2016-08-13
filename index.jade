@@ -37,6 +37,9 @@ html(lang="en")
 			$(function() {
 				$("#introduccion #foto-about-me a").lettering();
 			});
+			$(function() {
+				$("#miTrabajo .trabajos>a").lettering();
+			});
 						
 	body.background-all
 		section#inicio
@@ -66,7 +69,7 @@ html(lang="en")
 			.container
 				.row
 					.col-md-5.foto-about-me#foto-about-me.text-center
-						a .
+						a.img-responsive .
 						//- span Camaná, 23 de Julio
 					.col-md-7
 						.texto-about-me.TEXT-CENTER.fondo-about-me
@@ -107,13 +110,12 @@ html(lang="en")
 									li Wordpress
 									li Autocad
 									li NodeJs
-									li Angular
-					
-		section#miTrabajo.height_100
+									li Angular			
+		section#miTrabajo
 			.container
-				.row
-					.col-md-4
-						p foto trabajo1
+				.row.text-center
+					.col-md-4.trabajos
+						a .
 						//- Stick
 						div
 							p Nombre PY:<span> PY1</span>
@@ -121,25 +123,17 @@ html(lang="en")
 							a.btn
 								i.fa.fa-github.btn(href="#" role="button")
 
-					.col-md-4
-						p foto trabajo1
-						//- Stick
+					.col-md-4.trabajos
+						a .
+						//- Stic
 						div
 							p Nombre PY:<span> PY1</span>
 							p Descripcion:<span> lalalalalala</span>
 							a.btn
 								i.fa.fa-github.btn(href="#" role="button")
 						
-					.col-md-4
-						p foto trabajo1
-						//- Stick
-						div
-							p Nombre PY:<span> PY1</span>
-							p Descripcion:<span> lalalalalala</span>
-							a.btn
-								i.fa.fa-github.btn(href="#" role="button")
-					.col-md-4
-						p foto trabajo1
+					.col-md-4.trabajos
+						a .
 						//- Stick
 						div
 							p Nombre PY:<span> PY1</span>
