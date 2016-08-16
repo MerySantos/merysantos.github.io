@@ -209,3 +209,7 @@ p{font-family:'Arimo',sans-serif ;color:; font-size: 1.5em;}
     padding: auto 20em;
     font-size: 1.2em;
   }
+
+/*porqueelegirme*/
+#porqueelegirme .porqueelegirme{ height:700px;
+  background: url(../img/xqelegirme-hoja.png); background-size: cover; }
