@@ -52,7 +52,7 @@ p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
     bottom: 0;
   }
   /*-------------TODAS LAS FOTOS---------------*/
-  .letter-container h2 a span,#introduccion #foto-about-me a span,#miTrabajo .trabajos>a span{
+  .letter-container h2 a span,#introduccion #foto-about-me a span,#miTrabajo .trabajos>a span, #contactame .foto-contactame>a span{
     display: inline-block;
     position: relative;
     width: 200px;
@@ -239,22 +239,45 @@ p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
 
 /*Mis trabajos*/
   #miTrabajo .trabajos>a span{
-    width: 80%;
-    height: 350px;
+    width: 95%;
+    height: 310px;
     margin: 15% 5%;
     background-size: cover;
     border-width: 10px 10px 65px 10px;}
-  #miTrabajo i{font-size:3em ;color:brown;}
+  #miTrabajo i{font-size:2.8em ;color:brown;}
   #miTrabajo .titulo-trabajo{font-weight: bolder;}
   #miTrabajo .trabajo1>a span{background-image: url(../img/cp-trabajo1.jpg);}
   #miTrabajo .trabajo2>a span{background-image: url(../img/cp-trabajo2.jpg);}
   #miTrabajo .trabajo3>a span{background-image: url(../img/cp-trabajo3.jpg);}
-  #miTrabajo .trabajo1>div{padding: 15% 10%;background-image: url(../img/trabajo1.png);background-size: cover; width: 300px; height: 300px;left: -12%;top: -200px;}
-  #miTrabajo .trabajo2>div{padding: 15% 10%;background-image: url(../img/trabajo2.png);background-size: cover; width: 300px; height: 300px;left: 12%;top: -200px;}
-  #miTrabajo .trabajo3>div{padding: 17% 11%;background-image: url(../img/trabajo3.png);background-size: cover; width: 300px; height: 300px;left: 20%;top: -200px;}
+  #miTrabajo .trabajo4>a span{background-image: url(../img/cp-trabajo3.jpg);}
+  #miTrabajo .trabajo5>a span{background-image: url(../img/cp-trabajo3.jpg);}
+  #miTrabajo .trabajo6>a span{background-image: url(../img/cp-trabajo3.jpg);}
+  #miTrabajo .trabajo1>div, #miTrabajo .trabajo4>div{padding: 15% 10%;background-image: url(../img/trabajo1.png);background-size: cover; width: 300px; height: 300px;left: -12%;top: -200px;}
+  #miTrabajo .trabajo2>div, #miTrabajo .trabajo5>div{padding: 15% 10%;background-image: url(../img/trabajo2.png);background-size: cover; width: 300px; height: 300px;left: 12%;top: -200px;}
+  #miTrabajo .trabajo3>div, #miTrabajo .trabajo6>div{padding: 22% 11%;background-image: url(../img/trabajo3.png);background-size: cover; width: 300px; height: 300px;left: 20%;top: -200px;}
   #miTrabajo .container>.row { margin:8% auto; }
  /* #miTrabajo .texto-trabajo1>div{ top:40%; }
   #miTrabajo .texto-trabajo2>div{}
   #miTrabajo .texto-trabajo3>div{}*/
 
+/*Contactame*/
+ 
+  
+  /*#contactame .foto-contactame>a {top:340px;}*/
+  #contactame .foto-contactame>a span{
+    background-image: url(../img/4.jpg);
+    width: 50%;
+    height: 410px;
+    margin: 15% 5%;
+    background-size: cover;
+    border-width: 10px 10px 65px 10px;
+    transform: rotate(-3deg);
+    left:3%;
+    /*top:-10em;*/
+  }
+  #contactame .texto-contactame{top:25em;left:30%;transform: rotate(-3deg); background: url(../img/carta-contactame.png) 100%; width: 70%;height: 310px; background-size: cover; }
+  #contactame .texto-contactame>div{top:7.8em;left:53%;width:45%;}
+  #contactame .contacto{background-image: url(../img/tira de fotos ver.png) ;background-size: cover; }
+  #contactame i{font-size:5em ;color:brown;}
+  #contactame img{width: 50%}
 
