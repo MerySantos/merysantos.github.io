@@ -37,8 +37,7 @@ h1{font-family: 'Rhodium Libre',serif; }
     color:#A4A680;
     font-family: 'Arimo',sans-serif-serif;
     font-size: 1.2em;
-    text-transform: uppercase;
-    border: 1px dashed rgba(255,255,255,0.8);}
+    text-transform: uppercase;}
 
 /*.tira-fotos*/
 #hero-section{position: relative;bottom: 0;}
