@@ -3,7 +3,7 @@
 
 body{ background: url(../img/fondo-corcho2.png); font-family: ;color:;}
 p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
-
+h1{font-family: 'Rhodium Libre',serif; }
 .height_100{ height: 100vh; }
 
 /*Inicio*/
@@ -14,7 +14,6 @@ p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
 
   .hero-section h1{ 
     margin:8% auto 0;
-    font-family: 'Rhodium Libre',serif;
     font-size: 6.5em; }
 
   .hero-section h4{
@@ -249,13 +248,19 @@ p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
   #miTrabajo .trabajo1>a span{background-image: url(../img/cp-trabajo1.jpg);}
   #miTrabajo .trabajo2>a span{background-image: url(../img/cp-trabajo2.jpg);}
   #miTrabajo .trabajo3>a span{background-image: url(../img/cp-trabajo3.jpg);}
-  #miTrabajo .trabajo4>a span{background-image: url(../img/cp-trabajo3.jpg);}
-  #miTrabajo .trabajo5>a span{background-image: url(../img/cp-trabajo3.jpg);}
-  #miTrabajo .trabajo6>a span{background-image: url(../img/cp-trabajo3.jpg);}
+  #miTrabajo .trabajo4>a span{background-image: url(../img/cp-trabajo1.jpg);}
+  #miTrabajo .trabajo5>a span{background-image: url(../img/cp-trabajo1.jpg);}
+  #miTrabajo .trabajo6>a span{background-image: url(../img/cp-trabajo1.jpg);}
   #miTrabajo .trabajo1>div, #miTrabajo .trabajo4>div{padding: 15% 10%;background-image: url(../img/trabajo1.png);background-size: cover; width: 300px; height: 300px;left: -12%;top: -200px;}
-  #miTrabajo .trabajo2>div, #miTrabajo .trabajo5>div{padding: 15% 10%;background-image: url(../img/trabajo2.png);background-size: cover; width: 300px; height: 300px;left: 12%;top: -200px;}
+  #miTrabajo .trabajo2>div, #miTrabajo .trabajo5>div{padding: 15% 10%;background-image: url(../img/trabajo2.png);background-size: cover; width: 300px; height: 300px;left: 14%;top: -200px;}
   #miTrabajo .trabajo3>div, #miTrabajo .trabajo6>div{padding: 22% 11%;background-image: url(../img/trabajo3.png);background-size: cover; width: 300px; height: 300px;left: 20%;top: -200px;}
-  #miTrabajo .container>.row { margin:8% auto; }
+  #miTrabajo .container> :first-child{ margin: 8% auto 0;}
+  /*#miTrabajo .container>.row :nth-child(4){ margin:0;}*/
+
+  /*#miTrabajo .container> :nth-child(2){ height: 800px;}*/
+
+
+
  /* #miTrabajo .texto-trabajo1>div{ top:40%; }
   #miTrabajo .texto-trabajo2>div{}
   #miTrabajo .texto-trabajo3>div{}*/
@@ -275,9 +280,13 @@ p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
     left:3%;
     /*top:-10em;*/
   }
-  #contactame .texto-contactame{top:25em;left:30%;transform: rotate(-3deg); background: url(../img/carta-contactame.png) 100%; width: 70%;height: 310px; background-size: cover; }
-  #contactame .texto-contactame>div{top:7.8em;left:53%;width:45%;}
-  #contactame .contacto{background-image: url(../img/tira de fotos ver.png) ;background-size: cover; }
+  #contactame .row{margin: 12% auto;}
+  #contactame .texto-contactame{font-size:0.9em;left:30%;transform: rotate(-3deg); background: url(../img/carta-contactame.png) 100%; width: 70%;height: 310px; background-size: cover; }
+  #contactame .texto-contactame>div{top:9.5em;left:53%;width:45%;}
+  #contactame .foto-contactame{top:-25em;}
+
+  #contactame .contacto{background: url(../img/link.png) center;background-size: cover; }
+/*  #contactame .c{font-size:0.5em;}*/
   #contactame i{font-size:5em ;color:brown;}
   #contactame img{width: 50%}
 
