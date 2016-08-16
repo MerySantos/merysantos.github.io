@@ -4,47 +4,20 @@
 body{ background: url(../img/fondo-corcho2.png); font-family: ;color:;}
 p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
 h1{font-family: 'Rhodium Libre',serif; }
-.height_100{ height: 100vh; }
+
 
 /*Inicio*/
-  #inicio .container{}
-  .hero-section{
-    margin-top: 5%;
-    margin-bottom: 3%;}
+  .hero-section{ margin-top: 5%;  margin-bottom: 3%;}
+  .hero-section h1{ margin:8% auto 0;  font-size: 6.5em; }
+  .hero-section h4{ font-family: 'Arimo', sans-serif-serif; font-size: 1.8em; margin: 0 auto 3%; }
 
-  .hero-section h1{ 
-    margin:8% auto 0;
-    font-size: 6.5em; }
-
-  .hero-section h4{
-    font-family: 'Arimo',sans-serif-serif;
-    font-size: 1.8em;
-    margin: 0 auto 3%; }
-
-  nav{
-    position: fixed;
-    width: 100%;
-    margin-top: 1%;
-    z-index: 1000;}
-
-  nav li{
-    padding: 1.5%;
-    background:#271F2E;
-    background-size:cover;width:18%; 
-    height: 100%;
-    /*padding: 0;*/
-  }
-  /*nav .borde-nav{ margin:0px;padding:5px;border: 1px dashed rgba(255,255,255,0.8); }*/
-  nav a{
-    color:#A4A680;
-    font-family: 'Arimo',sans-serif-serif;
-    font-size: 1.2em;
-    text-transform: uppercase;}
+  nav{position: fixed; width: 100%; margin-top: 1%; z-index: 1000;}
+  nav li{ padding: 1.5%;  background:#271F2E;   background-size:cover;  width:18%;  height: 100%;}
+  nav a{color:#A4A680;  font-family: 'Arimo',sans-serif-serif; font-size: 1.2em; text-transform: uppercase;}
 
 /*.tira-fotos*/
-#hero-section{position: relative;bottom: 0;}
+  #hero-section{position: relative;bottom: 0;}
   .letter-container{
-    /*border-bottom: 1px dashed rgba(255,255,255,0.8);*/
     border-top: 5px dashed rgba(255,255,255,0.8);
     margin: 3%;
     padding: 20px 10px;
@@ -52,6 +25,7 @@ h1{font-family: 'Rhodium Libre',serif; }
     position:relative;
     bottom: 0;
   }
+
   /*-------------TODAS LAS FOTOS---------------*/
   .letter-container h2 a span,#introduccion #foto-about-me a span,#miTrabajo .trabajos>a span, #contactame .foto-contactame>a span{
     display: inline-block;
@@ -76,7 +50,6 @@ h1{font-family: 'Rhodium Libre',serif; }
     position: absolute;
     width: 200px;
     height: 240px;
-    /*top: -10px;*/
     left: -10px;
     background: transparent;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#520e0e0e', endColorstr='#52474545',GradientType=1 );
@@ -118,7 +91,6 @@ h1{font-family: 'Rhodium Libre',serif; }
   .letter-container span.char5{
     background-image: url(../img/5.jpg);
   }
-
   
   .letter-container h2 a:hover span:nth-child(even){
     -webkit-transform: scale(0.9) rotate(-5deg) translateZ(0);
@@ -141,8 +113,6 @@ h1{font-family: 'Rhodium Libre',serif; }
     -o-animation: moveImg 9s linear infinite forwards;
     -ms-animation: moveImg 9s linear infinite forwards;
     animation: moveImg 9s linear infinite forwards;
-    /*color: rgba(255,255,255,0.4);*/
-    /*text-shadow:0px 0px 5px rgba(0,0,0,0.1);*/
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -196,7 +166,7 @@ h1{font-family: 'Rhodium Libre',serif; }
     width: 300px;
     height: 400px;
     background-size: cover;
-    background-image: url(../img/4.jpg);
+    background-image: url(../img/misha-perfil.jpg);
     margin: 15% 5%;
     border-width: 10px 10px 65px 10px;
     /*background-size: 250px 467px;*/}
@@ -243,7 +213,7 @@ h1{font-family: 'Rhodium Libre',serif; }
 
 /*Mis trabajos*/
   #miTrabajo .trabajos>a span{
-    width: 95%;
+    width: 90%;
     height: 310px;
     margin: 15% 5%;
     background-size: cover;
@@ -271,9 +241,6 @@ h1{font-family: 'Rhodium Libre',serif; }
   #miTrabajo .texto-trabajo3>div{}*/
 
 /*Contactame*/
- 
-  
-  /*#contactame .foto-contactame>a {top:340px;}*/
   #contactame .foto-contactame>a span{
     background-image: url(../img/4.jpg);
     width: 50%;
