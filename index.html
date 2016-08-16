@@ -4,14 +4,16 @@
     <title>Portafolio Mery Santos</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta ame="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utilitarios.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Rhodium+Libre" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet" type="text/css"><link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'> 
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet" type="text/css"><link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'> 
     <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
     <script src="main.js"></script>
     <script type="text/javascript" src="js/jquery.lettering.js"></script>
@@ -22,6 +24,9 @@
       });
       $(function() {
       	$("#introduccion #foto-about-me a").lettering();
+      });
+      $(function() {
+      	$("#miTrabajo .trabajos>a").lettering();
       });
       			
     </script>
@@ -37,7 +42,7 @@
           <li><a href="#contactame" class="underline">CONTACT ME</a></li>
         </ul>
       </nav>
-      <div class="container height_100">
+      <div class="container">
         <div class="row hero-section text-center">
           <h1>MERY SANTOS</h1>
           <h4>WEB DEVELOPER</h4>
@@ -50,9 +55,10 @@
     <section id="introduccion">
       <div class="container">
         <div class="row">
-          <div id="foto-about-me" class="col-md-4 foto-about-me text-center"><a>.</a></div>
-          <div class="col-md-8 fondo-about-me">
-            <div class="texto-about-me">
+          <div id="foto-about-me" class="col-md-5 foto-about-me text-center"><a class="img-responsive">.</a>
+          </div>
+          <div class="col-md-7">
+            <div class="texto-about-me TEXT-CENTER fondo-about-me">
               <p>Hola!, mi nombre es Mery Santos Zabalaga, nací un 23 de Julio en la ciudad de Camaná (Arequipa), y estudié la carrera de Ing. de Sistemas.</p>
               <p>Me considero una persona que aprende rápido, autodidacta y con ganas de no quedarse en lo mismo, es por ello que me anime a participar en Laboratoria para obtener lo mejor de mi.</p>
             </div>
@@ -60,95 +66,84 @@
         </div>
       </div>
     </section>
-    <section id="porqueelegirme" class="height_100">
-      <div class="container">
+    <section id="porqueelegirme">
+      <div class="container text">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="row">
-              <div class="col-md-1">
-                <p> 
-                  <ul>Programacion Web
-                    <li>HTML + CSS</li>
-                    <li>JS</li>
-                    <li>JQuery</li>
-                    <li>Jade + Sass</li>
-                  </ul>
-                </p>
+              <div class="habilidad1 medidas-hab">
+                <ul class="p-rl"><span>Programacion Web </span>
+                  <li>HTML + CSS</li>
+                  <li>JS</li>
+                  <li>JQuery</li>
+                  <li>Jade + Sass</li>
+                </ul>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-12">
-                <p>
-                  <ul>Programacion Orientada a Objetos
-                    <li>Visual Basic</li>
-                    <li>Java</li>
-                  </ul>
-                </p>
+              <div class="habilidad2 medidas-hab p-rl">
+                <ul class="p-rl"><span>Programacion Orientada a Objetos </span>
+                  <li>Visual Basic</li>
+                  <li>Java</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-4 porqueelegirme">
-            <p>papel-enorme</p><br>
+          <div class="col-md-6 medidas-hoja-hab text-center">
+            <div class="habilidad-papel p-rl">
+              <p class="p-rl">MIS HABILIDADES</p>
+            </div>
           </div>
-          <brbr></brbr>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="row">
-              <div class="col-md-12">
-                <p> 
-                  <ul>Otros
-                    <li>Wordpress</li>
-                    <li>Autocad</li>
-                    <li>NodeJs</li>
-                    <li>Angular</li>
-                  </ul>
-                </p>
+              <div class="habilidad3 medidas-hab p-rl">
+                <ul class="p-rl"><span>Otros</span>
+                  <li>Wordpress</li>
+                  <li>Autocad</li>
+                  <li>NodeJs</li>
+                  <li>Angular</li>
+                </ul>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-12">
-                <p> 
-                  <ul>Otros
-                    <li>Wordpress</li>
-                    <li>Autocad</li>
-                    <li>NodeJs</li>
-                    <li>Angular</li>
-                  </ul>
-                </p>
+              <div class="habilidad4 medidas-hab p-rl">
+                <ul class="p-rl"><span>Otros</span>
+                  <li>Wordpress</li>
+                  <li>Autocad</li>
+                  <li>NodeJs</li>
+                  <li>Angular			</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="mitrabajo" class="height_100">
+    <section id="miTrabajo">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <p>foto trabajo1</p>
-            <div>
-              <p>Nombre PY:<span> PY1</span></p>
-              <p>Descripcion:<span> lalalalalala</span></p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a>
+        <div class="row text-center">
+          <div class="col-md-4 trabajos trabajo1 p-rl"><a>.</a>
+            <div class="texto-trabajo1 p-rl">
+              <div class="p-rl">
+                <p class="titulo-trabajo">AGENCY THEME</p>
+                <p>Proyecto desarrollado con preprocesadores Jade y Sass</p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <p>foto trabajo1</p>
-            <div>
-              <p>Nombre PY:<span> PY1</span></p>
-              <p>Descripcion:<span> lalalalalala</span></p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a>
+          <div class="col-md-4 trabajos trabajo2 p-rl"><a>.</a>
+            <div class="texto-trabajo2 p-rl">
+              <div class="p-rl">
+                <p class="titulo-trabajo">AGENCY THEME</p>
+                <p>Proyecto desarrollado con preprocesadores Jade y Sass</p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <p>foto trabajo1</p>
-            <div>
-              <p>Nombre PY:<span> PY1</span></p>
-              <p>Descripcion:<span> lalalalalala</span></p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <p>foto trabajo1</p>
-            <div>
-              <p>Nombre PY:<span> PY1</span></p>
-              <p>Descripcion:<span> lalalalalala</span></p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a>
+          <div class="col-md-4 trabajos trabajo3 p-rl"><a>.</a>
+            <div class="texto-trabajo3 p-rl">
+              <div class="p-rl">
+                <p class="titulo-trabajo">AGENCY THEME</p>
+                <p>Proyecto desarrollado con preprocesadores Jade y Sass</p><a class="btn"><i href="#" role="button" class="fa fa-github btn"></i></a>
+              </div>
             </div>
           </div>
         </div>

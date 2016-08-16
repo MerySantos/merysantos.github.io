@@ -4,44 +4,6 @@
 //- mereces lo que sueñas
 //- Se como el lobo, fuerte en la soledad, solidario en el grupo
 //- Si vas a cometer errores, que sean nuevos
-//- Mixins a usar
-
-//- FIN Mixins a us
-mixin trabajos(img1,nombrepy1,description1,img2,nombrepy2,description2,img3,nombrepy3,description3)
-	.row
-		.col-sm-6.col-md-4
-			.thumbnail
-				img(src=img1 alt="PY")
-			.caption
-				h3=nombrep1
-				p=description1
-				p
-					a.btn
-						i.fa.fa-github.btn(href="#" role="button")
-					a.btn
-						i.fa.fa-eye(href="#" role="button")
-		.col-sm-6.col-md-4
-			.thumbnail
-				img(src=img2 alt="PY")
-			.caption
-				h3=nombrep2
-				p=description2
-				p
-					a.btn
-						i.fa.fa-github.btn(href="#" role="button")
-					a.btn
-						i.fa.fa-eye(href="#" role="button")
-		.col-sm-6.col-md-4
-			.thumbnail
-				img(src=img3 alt="PY")
-			.caption
-				h3=nombrep3
-				p=description3
-				p
-					a.btn
-						i.fa.fa-github.btn(href="#" role="button")
-					a.btn
-						i.fa.fa-eye(href="#" role="button")
 
 doctype html
 html(lang="en")
@@ -49,16 +11,18 @@ html(lang="en")
 		title Portafolio Mery Santos
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
-		meta(ame="viewport" content="width=device-width, initial-scale=1")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
 		link(rel="stylesheet" href="css/bootstrap.min.css")
 		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
-		link(rel="stylesheet" href="css/style.css")
 		link(rel="stylesheet" href="css/utilitarios.css")
+		link(rel="stylesheet" href="css/style.css")
 		//- Titulo
 		link(href='https://fonts.googleapis.com/css?family=Rhodium+Libre' rel='stylesheet' type='text/css') 
 		//- Handwriting
 		link(href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet' type='text/css')
+		<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'> 
 		
 		
@@ -72,6 +36,9 @@ html(lang="en")
 			});
 			$(function() {
 				$("#introduccion #foto-about-me a").lettering();
+			});
+			$(function() {
+				$("#miTrabajo .trabajos>a").lettering();
 			});
 						
 	body.background-all
@@ -89,105 +56,93 @@ html(lang="en")
 					li
 						a.underline(href="#contactame") CONTACT ME
 
-			.container.height_100
+			.container
 				.row.hero-section.text-center
 					h1 MERY SANTOS
 					h4 WEB DEVELOPER
 					//- Tira-fotos
+
 					#letter-container.letter-container
 						h2
 							a(href="#") misha
 		section#introduccion
 			.container
 				.row
-					.col-md-4.foto-about-me#foto-about-me.text-center
-						a .
-					.col-md-8.fondo-about-me
-						.texto-about-me
+					.col-md-5.foto-about-me#foto-about-me.text-center
+						a.img-responsive .
+						//- span Camaná, 23 de Julio
+					.col-md-7
+						.texto-about-me.TEXT-CENTER.fondo-about-me
 							p Hola!, mi nombre es Mery Santos Zabalaga, nací un 23 de Julio en la ciudad de Camaná (Arequipa), y estudié la carrera de Ing. de Sistemas.
 							p Me considero una persona que aprende rápido, autodidacta y con ganas de no quedarse en lo mismo, es por ello que me anime a participar en Laboratoria para obtener lo mejor de mi.
-		section#porqueelegirme.height_100
-			.container
+		section#porqueelegirme
+			.container.text
 				.row
-					.col-md-4
+					.col-md-3
 						.row
-							.col-md-1
-								p 
-									ul Programacion Web
-										li HTML + CSS
-										li JS
-										li JQuery
-										li Jade + Sass
+							.habilidad1.medidas-hab
+								ul.p-rl <span>Programacion Web </span>
+									li HTML + CSS
+									li JS
+									li JQuery
+									li Jade + Sass
 						.row
-							.col-md-12
-								p
-									ul Programacion Orientada a Objetos
+							.habilidad2.medidas-hab.p-rl
+									ul.p-rl <span>Programacion Orientada a Objetos </span>
 										li Visual Basic
 										li Java
-					.col-md-4.porqueelegirme
-						p papel-enorme
-						br
-
-					brbr
-					.col-md-4
+					
+					.col-md-6.medidas-hoja-hab.text-center
+						.habilidad-papel.p-rl
+							p.p-rl MIS HABILIDADES
+					
+					.col-md-3
 						.row
-							.col-md-12
-								p 
-									//- Stick
-									ul Otros
-										li Wordpress
-										li Autocad
-										li NodeJs
-										li Angular
+							.habilidad3.medidas-hab.p-rl
+								ul.p-rl <span>Otros</span>
+									li Wordpress
+									li Autocad
+									li NodeJs
+									li Angular
 						.row
-							.col-md-12
-								p 
-									ul Otros
-										li Wordpress
-										li Autocad
-										li NodeJs
-										li Angular
-				
-		section#mitrabajo.height_100
+							.habilidad4.medidas-hab.p-rl
+								ul.p-rl <span>Otros</span>
+									li Wordpress
+									li Autocad
+									li NodeJs
+									li Angular			
+		section#miTrabajo
 			.container
-				.row
-					.col-md-4
-						p foto trabajo1
+				.row.text-center
+					.col-md-4.trabajos.trabajo1.p-rl
+						a .
 						//- Stick
-						div
-							p Nombre PY:<span> PY1</span>
-							p Descripcion:<span> lalalalalala</span>
-							a.btn
-								i.fa.fa-github.btn(href="#" role="button")
+						div.texto-trabajo1.p-rl
+							div.p-rl
+								p.titulo-trabajo AGENCY THEME
+								p Proyecto desarrollado con preprocesadores Jade y Sass
+								a.btn
+									i.fa.fa-github.btn(href="#" role="button")
 
-
-				
-
-					.col-md-4
-						p foto trabajo1
-						//- Stick
-						div
-							p Nombre PY:<span> PY1</span>
-							p Descripcion:<span> lalalalalala</span>
-							a.btn
-								i.fa.fa-github.btn(href="#" role="button")
+					.col-md-4.trabajos.trabajo2.p-rl
+						a .
+						//- Stic
+						div.texto-trabajo2.p-rl
+							div.p-rl
+								p.titulo-trabajo AGENCY THEME
+								p Proyecto desarrollado con preprocesadores Jade y Sass
+								a.btn
+									i.fa.fa-github.btn(href="#" role="button")
 						
-					.col-md-4
-						p foto trabajo1
+					.col-md-4.trabajos.trabajo3.p-rl
+						a .
 						//- Stick
-						div
-							p Nombre PY:<span> PY1</span>
-							p Descripcion:<span> lalalalalala</span>
-							a.btn
-								i.fa.fa-github.btn(href="#" role="button")
-					.col-md-4
-						p foto trabajo1
-						//- Stick
-						div
-							p Nombre PY:<span> PY1</span>
-							p Descripcion:<span> lalalalalala</span>
-							a.btn
-								i.fa.fa-github.btn(href="#" role="button")
+						div.texto-trabajo3.p-rl
+							div.p-rl
+								p.titulo-trabajo AGENCY THEME
+								p Proyecto desarrollado con preprocesadores Jade y Sass
+								a.btn
+									i.fa.fa-github.btn(href="#" role="button")
 						
 				
 		section#contactame.height_100
