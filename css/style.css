@@ -11,9 +11,9 @@ h1{font-family: 'Rhodium Libre',serif; }
   .hero-section h1{ margin:8% auto 0;  font-size: 6.5em; }
   .hero-section h4{ font-family: 'Arimo', sans-serif-serif; font-size: 1.8em; margin: 0 auto 3%; }
 
-  nav{position: fixed; width: 100%; margin-top: 1%; z-index: 1000;}
+  nav{ transition:all 3s;position: fixed; width: 100%; margin-top: 1%; z-index: 1000;}
   nav li{ padding: 1.5%;  background:#271F2E;   background-size:cover;  width:18%;  height: 100%;}
-  nav a{color:#A4A680;  font-family: 'Arimo',sans-serif-serif; font-size: 1.2em; text-transform: uppercase;}
+  nav a{transition:all 3s; color:#A4A680;  font-family: 'Arimo',sans-serif-serif; font-size: 1.2em; text-transform: uppercase;}
 
 /*.tira-fotos*/
   #hero-section{position: relative;bottom: 0;}
@@ -257,10 +257,11 @@ h1{font-family: 'Rhodium Libre',serif; }
   #contactame .texto-contactame>div{top:9.5em;left:53%;width:45%;}
   #contactame .foto-contactame{top:-25em;}
 
-  #contactame .contacto{background: url(../img/link2.png) center;background-size: cover; }
+  #contactame .contacto{padding:3%;background: url(../img/link2.png) center ;background-size: cover; }
   #contactame a span div{position:relative; top:-15%; left:50%; height:15%; width:19%;
     background: url(../img/pin-amarillo.png) ; 
-    background-size: cover;}
-  #contactame i{font-size:5em ;color:brown;}
+    background-size: cover;}  
+  #contactame i{font-size:5em ;color:brown; }
+  #contactame .contacto>a{width: 40%; margin:5% auto 5% 29%;}
   #contactame img{width: 50%}
 
