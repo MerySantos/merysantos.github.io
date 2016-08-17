@@ -39,7 +39,8 @@ h1{font-family: 'Rhodium Libre',serif; }
     border-color: #fff;
     border-style: solid;
     border-width: 10px 10px 45px 10px;
-    /*-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
+    -webkit-box-shadow: 2px 2px 20px 4px rgba(0,0,0,0.6), 0px 0px 2px rgba(0,0,0,0.2) inset;
+    /*-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.9) inset;
     -moz-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
     box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;*/
     -webkit-transition: all 0.3s ease-in-out;
@@ -249,7 +250,9 @@ h1{font-family: 'Rhodium Libre',serif; }
     left:3%;
     /*top:-10em;*/
   }
-  #contactame .row{margin: 14% auto;}
+  
+  #contactame .container{margin: 8% auto 0;}
+  #contactame .titulo-contactame{margin: 8% auto 2%;}
   #contactame .texto-contactame{font-size:0.9em;left:30%;transform: rotate(-3deg); background: url(../img/carta-contactame.png) 100%; width: 70%;height: 310px; background-size: cover; }
   #contactame .texto-contactame>div{top:9.5em;left:53%;width:45%;}
   #contactame .foto-contactame{margin:-25em auto auto auto;}
