@@ -213,6 +213,15 @@ h1{font-family: 'Rhodium Libre',serif; }
     margin: 15% 5%;
     background-size: cover;
     border-width: 10px 10px 65px 10px;}
+    
+  #miTrabajo .trabajos>a span div{position:relative;
+    top:-22%;
+    left:50%;
+    height:20%;
+    width:15%;
+    background: url(../img/pin-rosado.png) ; 
+    background-size: cover;}
+  
   #miTrabajo i{font-size:2.5em ;color:brown;}
   #miTrabajo .trabajos{font-size:0.9em;}
   #miTrabajo .titulo-trabajo{font-weight: bolder;}
@@ -252,4 +261,3 @@ h1{font-family: 'Rhodium Libre',serif; }
   #contactame i{font-size:5em ;color:brown; }
   #contactame .contacto>a{width: 40%; margin:5% auto 5% 29%;}
   #contactame img{width: 50%}
-
