@@ -11,10 +11,10 @@ h1{font-family: 'Rhodium Libre',serif; }
   .hero-section h1{ margin:8% auto 0;  font-size: 6.5em; }
   .hero-section h4{ font-family: 'Arimo', sans-serif-serif; font-size: 1.8em; margin: 0 auto 3%; }
 
-  nav{ transition:all 3s;position: fixed; width: 100%; margin-top: 1%; z-index: 1000; }
+  nav{ background: url(../img/fondo-corcho2.png);  transition:all 3s;position: fixed; width: 100%; padding-top: 1%; z-index: 1000; }
   nav li{ padding: 1.5%;  background:#240A03;   background-size:cover;  width:18%;  height: 100%;}
-  nav a{transition:all 3s; color:#A4A680;  font-family: 'Arimo',sans-serif-serif; font-size: 1.2em; text-transform: uppercase;}
-
+  nav a{transition:all 1s; color:#A4A680;  font-family: 'Arimo',sans-serif-serif; font-size: 1.2em; text-transform: uppercase;}
+  nav a:hover{ color:#F5F1DE; }   
 /*.tira-fotos*/
   #hero-section{position: relative;bottom: 0;}
   .letter-container{
@@ -208,12 +208,13 @@ h1{font-family: 'Rhodium Libre',serif; }
 
 /*Mis trabajos*/
   #miTrabajo .trabajos>a span{
-    width: 90%;
+    width: 80%;
     height: 310px;
     margin: 15% 5%;
     background-size: cover;
     border-width: 10px 10px 65px 10px;}
-  #miTrabajo i{font-size:2.8em ;color:brown;}
+  #miTrabajo i{font-size:2.5em ;color:brown;}
+  #miTrabajo .trabajos{font-size:0.9em;}
   #miTrabajo .titulo-trabajo{font-weight: bolder;}
   #miTrabajo .trabajo1>a span{background-image: url(../img/cp-trabajo1.jpg);}
   #miTrabajo .trabajo2>a span{background-image: url(../img/cp-trabajo2.jpg);}
@@ -221,12 +222,11 @@ h1{font-family: 'Rhodium Libre',serif; }
   #miTrabajo .trabajo4>a span{background-image: url(../img/cp-trabajo1.jpg);}
   #miTrabajo .trabajo5>a span{background-image: url(../img/cp-trabajo1.jpg);}
   #miTrabajo .trabajo6>a span{background-image: url(../img/cp-trabajo1.jpg);}
-  #miTrabajo .trabajo1>div, #miTrabajo .trabajo4>div{padding: 15% 10%;background-image: url(../img/trabajo1.png);background-size: cover; width: 300px; height: 300px;margin:-180px auto auto -12%;}
-  #miTrabajo .trabajo2>div, #miTrabajo .trabajo5>div{padding: 15% 10%;background-image: url(../img/trabajo2.png);background-size: cover; width: 300px; height: 300px;margin:-180px auto auto 14%;}
-  #miTrabajo .trabajo3>div, #miTrabajo .trabajo6>div{padding: 22% 11%;background-image: url(../img/trabajo3.png);background-size: cover; width: 300px; height: 300px;margin:-180px auto auto 20%;}
+  #miTrabajo .trabajo1>div, #miTrabajo .trabajo4>div{padding: 15% 10%;background-image: url(../img/trabajo1.png);background-size: cover; width: 280px; height: 280px;margin:-180px auto 40px -12%;}
+  #miTrabajo .trabajo2>div, #miTrabajo .trabajo5>div{padding: 15% 10%;background-image: url(../img/trabajo2.png);background-size: cover; width: 280px; height: 280px;margin:-180px auto 40px 14%;}
+  #miTrabajo .trabajo3>div, #miTrabajo .trabajo6>div{padding: 15% 9%;background-image: url(../img/trabajo3.png);background-size: cover; width: 280px; height: 280px;margin:-180px auto 40px 20%;}
   #miTrabajo .container> :first-child{ margin: 8% auto 0;}
-  /*#miTrabajo .col-md-4{ height: 10%;}*/
-  
+  /*#miTrabajo .col-md-4{ height: 10%;}*/ 
 
 /*Contactame*/
   #contactame .foto-contactame>a span{
