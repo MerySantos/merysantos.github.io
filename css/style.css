@@ -6,15 +6,17 @@ p{font-family:'Architects Daughter',sans-serif ; font-size: 1.5em;}
 h1{font-family: 'Rhodium Libre',serif; }
 
 
+/*#menu-general*/
+  nav{ background: url(../img/fondo-corcho2.png);  transition:all 3s;position: fixed; width: 100%; padding-top: 1%; z-index: 1000; }
+  nav li{ padding: 1.5%;  background:#240A03;   background-size:cover;  width:18%;  height: 100%;}
+  nav a{transition:all 1s; color:#A4A680;  font-family: 'Arimo',sans-serif-serif; font-size: 1.2em; text-transform: uppercase;}
+  nav a:hover{ color:#F5F1DE; }   
+  
 /*Inicio*/
   .hero-section{ margin-top: 5%;  margin-bottom: 3%;}
   .hero-section h1{ margin:8% auto 0;  font-size: 6.5em; }
   .hero-section h4{ font-family: 'Arimo', sans-serif-serif; font-size: 1.8em; margin: 0 auto 3%; }
 
-  nav{ background: url(../img/fondo-corcho2.png);  transition:all 3s;position: fixed; width: 100%; padding-top: 1%; z-index: 1000; }
-  nav li{ padding: 1.5%;  background:#240A03;   background-size:cover;  width:18%;  height: 100%;}
-  nav a{transition:all 1s; color:#A4A680;  font-family: 'Arimo',sans-serif-serif; font-size: 1.2em; text-transform: uppercase;}
-  nav a:hover{ color:#F5F1DE; }   
 /*.tira-fotos*/
   #hero-section{position: relative;bottom: 0;}
   .letter-container{
