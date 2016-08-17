@@ -162,6 +162,7 @@ h1{font-family: 'Rhodium Libre',serif; }
 
 /*Aboutme*/
   #introduccion {padding: 10% 0;}
+
   #introduccion #foto-about-me a span{
     width: 300px;
     height: 400px;
@@ -187,7 +188,6 @@ h1{font-family: 'Rhodium Libre',serif; }
     /*left: 1%;*/
     font-size: 25px;
     content: "Camaná 23 de Julio";
-    
    }
 
 /*Habilidades*/
@@ -252,7 +252,8 @@ h1{font-family: 'Rhodium Libre',serif; }
     left:3%;
     /*top:-10em;*/
   }
-  
+
+  #introduccion #foto-about-me a span div
   #contactame .container{margin: 8% auto 0;}
   #contactame .titulo-contactame{margin: 8% auto 2%;}
   #contactame .texto-contactame{font-size:0.9em;left:30%;transform: rotate(-3deg); background: url(../img/carta-contactame.png) 100%; width: 70%;height: 310px; background-size: cover; }
@@ -266,3 +267,13 @@ h1{font-family: 'Rhodium Libre',serif; }
   #contactame i{font-size:5em ;color:brown; }
   #contactame .contacto>a{width: 40%; margin:5% auto 5% 29%;}
   #contactame img{width: 50%}
+  #contactame .foto-contactame span p:after{
+    position:absolute;color:red;
+    font-family: 'Caveat'; 
+    width:100%;
+    bottom:-50px;
+    left:80px;
+    /*left: 1%;*/
+    font-size: 25px;
+    content: "Arequipa, 1 Mayo";
+   }
