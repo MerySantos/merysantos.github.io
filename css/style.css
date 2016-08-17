@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
 /**{outline:1px solid rgba(255,0,0,0.8);}*/
 
-body{ background: url(../img/fondo-corcho2.png); font-family: ;color:;}
-p{font-family:'Architects Daughter',sans-serif ;color:; font-size: 1.5em;}
+body{ background: url(../img/fondo-corcho2.png); font-family: ;color:#240A03;}
+p{font-family:'Architects Daughter',sans-serif ; font-size: 1.5em;}
 h1{font-family: 'Rhodium Libre',serif; }
 
 
@@ -11,8 +11,8 @@ h1{font-family: 'Rhodium Libre',serif; }
   .hero-section h1{ margin:8% auto 0;  font-size: 6.5em; }
   .hero-section h4{ font-family: 'Arimo', sans-serif-serif; font-size: 1.8em; margin: 0 auto 3%; }
 
-  nav{ transition:all 3s;position: fixed; width: 100%; margin-top: 1%; z-index: 1000;}
-  nav li{ padding: 1.5%;  background:#271F2E;   background-size:cover;  width:18%;  height: 100%;}
+  nav{ transition:all 3s;position: fixed; width: 100%; margin-top: 1%; z-index: 1000; }
+  nav li{ padding: 1.5%;  background:#240A03;   background-size:cover;  width:18%;  height: 100%;}
   nav a{transition:all 3s; color:#A4A680;  font-family: 'Arimo',sans-serif-serif; font-size: 1.2em; text-transform: uppercase;}
 
 /*.tira-fotos*/
@@ -39,9 +39,9 @@ h1{font-family: 'Rhodium Libre',serif; }
     border-color: #fff;
     border-style: solid;
     border-width: 10px 10px 45px 10px;
-    -webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
+    /*-webkit-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
     -moz-box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
-    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;
+    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.9), 0px 0px 2px rgba(0,0,0,0.2) inset;*/
     -webkit-transition: all 0.3s ease-in-out;
   }
 
@@ -159,9 +159,6 @@ h1{font-family: 'Rhodium Libre',serif; }
 
 /*Aboutme*/
   #introduccion {padding: 10% 0;}
-  /*#introduccion a span div{position:relative; top:-15%; left:50%; height:15%; width:19%;
-    background: url(../img/cinta-marron.png) ; 
-    background-size: cover;}*/
   #introduccion #foto-about-me a span{
     width: 300px;
     height: 400px;
@@ -171,13 +168,11 @@ h1{font-family: 'Rhodium Libre',serif; }
     border-width: 10px 10px 65px 10px;
     /*background-size: 250px 467px;*/}
 
-  #introduccion #foto-about-me a span div{
-    }
   #introduccion .fondo-about-me{
     background-image: url(../img/fondo-texto-about-me3.png) ;
     background-size:cover; 
     height: 550px;
-    padding: 19% 15%;
+    padding:14% 15%;
     font-size: 1.1em;
   }
   #introduccion #foto-about-me span p:after{
@@ -226,19 +221,12 @@ h1{font-family: 'Rhodium Libre',serif; }
   #miTrabajo .trabajo4>a span{background-image: url(../img/cp-trabajo1.jpg);}
   #miTrabajo .trabajo5>a span{background-image: url(../img/cp-trabajo1.jpg);}
   #miTrabajo .trabajo6>a span{background-image: url(../img/cp-trabajo1.jpg);}
-  #miTrabajo .trabajo1>div, #miTrabajo .trabajo4>div{padding: 15% 10%;background-image: url(../img/trabajo1.png);background-size: cover; width: 300px; height: 300px;left: -12%;top: -200px;}
-  #miTrabajo .trabajo2>div, #miTrabajo .trabajo5>div{padding: 15% 10%;background-image: url(../img/trabajo2.png);background-size: cover; width: 300px; height: 300px;left: 14%;top: -200px;}
-  #miTrabajo .trabajo3>div, #miTrabajo .trabajo6>div{padding: 22% 11%;background-image: url(../img/trabajo3.png);background-size: cover; width: 300px; height: 300px;left: 20%;top: -200px;}
+  #miTrabajo .trabajo1>div, #miTrabajo .trabajo4>div{padding: 15% 10%;background-image: url(../img/trabajo1.png);background-size: cover; width: 300px; height: 300px;margin:-180px auto auto -12%;}
+  #miTrabajo .trabajo2>div, #miTrabajo .trabajo5>div{padding: 15% 10%;background-image: url(../img/trabajo2.png);background-size: cover; width: 300px; height: 300px;margin:-180px auto auto 14%;}
+  #miTrabajo .trabajo3>div, #miTrabajo .trabajo6>div{padding: 22% 11%;background-image: url(../img/trabajo3.png);background-size: cover; width: 300px; height: 300px;margin:-180px auto auto 20%;}
   #miTrabajo .container> :first-child{ margin: 8% auto 0;}
-  /*#miTrabajo .container>.row :nth-child(4){ margin:0;}*/
-
-  /*#miTrabajo .container> :nth-child(2){ height: 800px;}*/
-
-
-
- /* #miTrabajo .texto-trabajo1>div{ top:40%; }
-  #miTrabajo .texto-trabajo2>div{}
-  #miTrabajo .texto-trabajo3>div{}*/
+  /*#miTrabajo .col-md-4{ height: 10%;}*/
+  
 
 /*Contactame*/
   #contactame .foto-contactame>a span{
@@ -252,10 +240,10 @@ h1{font-family: 'Rhodium Libre',serif; }
     left:3%;
     /*top:-10em;*/
   }
-  #contactame .row{margin: 12% auto;}
+  #contactame .row{margin: 14% auto;}
   #contactame .texto-contactame{font-size:0.9em;left:30%;transform: rotate(-3deg); background: url(../img/carta-contactame.png) 100%; width: 70%;height: 310px; background-size: cover; }
   #contactame .texto-contactame>div{top:9.5em;left:53%;width:45%;}
-  #contactame .foto-contactame{top:-25em;}
+  #contactame .foto-contactame{margin:-25em auto auto auto;}
 
   #contactame .contacto{padding:3%;background: url(../img/link2.png) center ;background-size: cover; }
   #contactame a span div{position:relative; top:-15%; left:50%; height:15%; width:19%;
