@@ -9,7 +9,7 @@ html(lang="en")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		link(rel="stylesheet" href="css/bootstrap.min.css")
-		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+		//- link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 		link(rel="stylesheet" href="css/utilitarios.css")
 		link(rel="stylesheet" href="css/style.css")
@@ -17,9 +17,9 @@ html(lang="en")
 		link(href='https://fonts.googleapis.com/css?family=Rhodium+Libre' rel='stylesheet' type='text/css') 
 		//- Handwriting
 		link(href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet' type='text/css')
-		<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+		//- <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+		//- <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 		//- Letra prueba
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
 		
@@ -45,21 +45,26 @@ html(lang="en")
 			});
 						
 	body.background-all
+		section#menu
+			.container
+				.navbar-header.visible-xs
+					button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#menu-g" aria-expanded="false")
+						i.fa.fa-bars
+					a.navbar-brand(href="#inicio") MSZ
+				nav.text-center.collapse.navbar-collapse#menu-g
+					ul.list-inline
+						li
+							a.underline(href="#inicio") Inicio
+						li
+							a.underline(href="#introduccion") Acerca de mí
+						li
+							a.underline(href="#porqueelegirme") Habilidades
+							//- ¿Porqué escogerme?
+						li
+							a.underline(href="#miTrabajo") Mi trabajo
+						li
+							a.underline(href="#contactame") Contactame
 		section#inicio
-			nav.text-center
-				ul.list-inline
-					li
-						a.underline(href="#inicio") Inicio
-					li
-						a.underline(href="#introduccion") Acerca de mí
-					li
-						a.underline(href="#porqueelegirme") Habilidades
-						//- ¿Porqué escogerme?
-					li
-						a.underline(href="#miTrabajo") Mi trabajo
-					li
-						a.underline(href="#contactame") Contactame
-
 			.container
 				.row.hero-section.text-center
 					h1 MERY SANTOS
