@@ -8,7 +8,7 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
-		link(rel="shorcut icon" href="img/favicon.png" type="image/png")
+		link(rel="shorcut icon" href="img/image/favicon.png" type="image/png")
 		link(rel="stylesheet" href="css/bootstrap.min.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 		link(rel="stylesheet" href="css/utilitarios.css")
@@ -42,25 +42,26 @@ html(lang="en")
 			});
 						
 	body.background-all
-		section#menu
-			
-				.navbar-header.visible-xs
-					button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#menu-g" aria-expanded="false")
-						i.fa.fa-bars
-					a.navbar-brand(href="#inicio") MSZ
-				nav.text-center.collapse.navbar-collapse#menu-g
-					ul.list-inline
-						li
-							a.underline(href="#inicio") Inicio
-						li
-							a.underline(href="#introduccion") Acerca de mí
-						li
-							a.underline(href="#porqueelegirme") Habilidades
-							//- ¿Porqué escogerme?
-						li
-							a.underline(href="#miTrabajo") Mi trabajo
-						li
-							a.underline(href="#contactame") Contactame
+		
+		section#menu.navbar
+			.navbar-header.visible-xs
+				button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#menu-g" aria-expanded="false")
+					i.fa.fa-bars
+				a(href="#inicio")
+					img(src="img/favicon.png" width="70px" style="margin-left:10px;margin-top:5px;")
+			nav.text-center.collapse.navbar-collapse#menu-g
+				ul.list-inline
+					li
+						a.underline(href="#inicio") Inicio
+					li
+						a.underline(href="#introduccion") Acerca de mí
+					li
+						a.underline(href="#porqueelegirme") Habilidades
+						//- ¿Porqué escogerme?
+					li
+						a.underline(href="#miTrabajo") Mi trabajo
+					li
+						a.underline(href="#contactame") Contactame
 		section#inicio
 			.container
 				.row.hero-section.text-center
@@ -146,39 +147,9 @@ html(lang="en")
 						div.texto-trabajo3.p-rl
 							div.p-rl
 								p.titulo-trabajo CAJERO <BR>AUTOMATICO
-								p Proyecto desarrollado con JavaScript.
+								p Proyecto realizado con JavaScript.
 								a.btn
-									i.fa.fa-github.btn(href="https://github.com/MerySantos/Cajero" role="button")
-
-					//- .col-md-4.trabajos.trabajo4
-					//- 	a .
-					//- 	//- Stick
-					//- 	div.texto-trabajo4.p-rl
-					//- 		div.p-rl
-					//- 			p.titulo-trabajo AGENCY THEME
-					//- 			p Proyecto desarrollado con preprocesadores Jade y Sass
-					//- 			a.btn
-					//- 				i.fa.fa-github.btn(href="#" role="button")
-
-					//- .col-md-4.trabajos.trabajo5
-					//- 	a .
-					//- 	//- Stic
-					//- 	div.texto-trabajo5.p-rl
-					//- 		div.p-rl
-					//- 			p.titulo-trabajo AGENCY THEME
-					//- 			p Proyecto desarrollado con preprocesadores Jade y Sass
-					//- 			a.btn
-					//- 				i.fa.fa-github.btn(href="#" role="button")
-						
-					//- .col-md-4.trabajos.trabajo6
-					//- 	a .
-					//- 	//- Stick
-					//- 	div.texto-trabajo6.p-rl
-					//- 		div.p-rl
-					//- 			p.titulo-trabajo AGENCY THEME
-					//- 			p Proyecto desarrollado con preprocesadores Jade y Sass
-					//- 			a.btn
-					//- 				i.fa.fa-github.btn(href="#" role="button")					
+									i.fa.fa-github.btn(href="https://github.com/MerySantos/Cajero" role="button")		
 		section#contactame
 			.container
 				.row.titulo-contactame
@@ -193,11 +164,11 @@ html(lang="en")
 						.foto-contactame.p-rl
 							a.img-responsive .
 					.col-md-5.contacto.text-center
-							a.btn.d-b
-								i.fa.fa-envelope.btn(href="www.gmail.com" role="button")
-							a.btn.d-b
-								i.fa.fa-twitter.btn(href="www.twitter.com" role="button")
-							a.btn.d-b
-								i.fa.fa-linkedin.btn(href="www.linkedin.com" role="button")
+						a.btn.d-b(href="mailto:rymesz@gmail.com?Subject=Hola" role="button")
+							i.fa.fa-envelope.btn
+						a.btn.d-b(href="https://github.com/MerySantos" role="button")
+							i.fa.fa-github.btn
+						a.btn.d-b(href="https://www.linkedin.com/in/mery-santos-zabalaga-a8b63335?trk=nav_responsive_tab_profile_pic" role="button")
+							i.fa.fa-linkedin.btn
 						//- .row
 						//- 	img(src="img/estampilla.png")		
