@@ -6,11 +6,12 @@ titulos para cada seccion y centrado en responsive*/
 
 body{ background: url(../img/fondo-corcho2.png); font-family: ;color:#240A03;}
 p{font-family:'Architects Daughter',sans-serif ; font-size: 1.5em;}
-h1{font-family: 'Rhodium Libre',serif; }
+h1{font-family: 'Rhodium Libre',serif; text-align: center;}
 
 
 /*#menu-general*/
   #menu{position: fixed;width: 100%; z-index: 1000;background: url(../img/fondo-corcho2.png);  transition:all 3s;}
+  #menu .navbar-header i{font-size:2em ;color:#240A03;}
   nav{  width: 100%; padding-top: 1%;  }
   nav li{ background:url(../img/cinta-marron2.png);padding: 1.3% ; margin:auto 1.5% auto; background-size:cover;  width:14%;  height: 100%;}
   nav a{text-decoration:none;transition:all 0.5s; color:#F5F1DE;  font-family: 'Permanent Marker',sans-serif-serif; font-size: 1.2em; /*text-transform: uppercase;*/}
