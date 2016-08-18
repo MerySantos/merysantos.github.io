@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
-/**{outline:1px solid rgba(255,0,0,0.8);}*/
+*{outline:1px solid rgba(255,0,0,0.8);}
 
 body{ background: url(../img/fondo-corcho2.png); font-family: ;color:#240A03;}
 p{font-family:'Architects Daughter',sans-serif ; font-size: 1.5em;}
@@ -198,8 +198,8 @@ h1{font-family: 'Rhodium Libre',serif; }
   #porqueelegirme .habilidad2 {background: url(../img/hab2.png);background-size: cover;}
   #porqueelegirme .habilidad3 {background: url(../img/hab3.png);background-size: cover;}
   #porqueelegirme .habilidad4{background: url(../img/hab4.png);background-size: cover;}
-  #porqueelegirme .habilidad-papel{margin:auto;width:450px; height:600px;background: url(../img/fondo-hab.png);background-size: cover;}
-  #porqueelegirme .habilidad-papel p {font-family: 'Rhodium Libre',serif; font-size:1.8em;top:40%; transform: rotate(5deg);}
+  #porqueelegirme .habilidad-papel{margin:auto;width:30em; height:40em;background: center url(../img/fondo-hab.png);background-size: cover;}
+  #porqueelegirme .habilidad-papel p {font-family: 'Rhodium Libre',serif; font-size:1.8em;top:39%; transform: rotate(5deg);}
   
   #porqueelegirme ul{ font-size:20px; width: 240px;  font-family:'Architects Daughter';}
   #porqueelegirme ul span{ text-transform:uppercase;font-size:18px; text-decoration:underline;width: 240px;}
