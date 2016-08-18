@@ -1,3 +1,6 @@
+/*texto de about me---- 
+
+titulos para cada seccion y centrado en responsive*/
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
 /**{outline:1px solid rgba(255,0,0,0.8);}*/
 
@@ -283,7 +286,8 @@ h1{font-family: 'Rhodium Libre',serif; }
       display:block;   width: 100%;
     }
     #inicio h1{ font-size: 5.2em; margin-top: 20%; }
-    #introduccion .texto-about-me p{font-size: 1.2em;} 
+    #introduccion .texto-about-me p{font-size: 1.2em; } 
+    #introduccion .texto-about-me { padding: 14% 2% 14% 25%;  } 
     #introduccion #foto-about-me a span{width: 270px;height: 350px;}
     #porqueelegirme .habilidad-papel{height: 30em; width: 20em;}
     #miTrabajo .trabajo3>div, #miTrabajo .trabajo6>div{margin:-180px auto 40px 18%;}
