@@ -21,12 +21,13 @@ html(lang="en")
 		<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
 		
-		
+		script(src="js/responsive-nav.js")
 		script(type="text/javascript" src="js/jquery-2.2.4.min.js")
 		script(type="text/javascript" src="js/jquery.js")
 		script(type="text/javascript" src="js/bootstrap.min.js")
 		script(src='main.js')
 		script(type="text/javascript" src="js/jquery.lettering.js")
+
 		script.
 			$(function() {
 				$("#letter-container h2 a").lettering();
@@ -44,23 +45,23 @@ html(lang="en")
 		
 		section#menu.navbar
 			.navbar-header.visible-xs
-				button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#menu-g" aria-expanded="false")
+				button.logo.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#menu-g" aria-expanded="false" data-scroll)
 					i.fa.fa-bars
 				a(href="#inicio")
 					img(src="img/favicon.png" width="70px" style="margin-left:10px;margin-top:5px;")
-			nav.text-center.collapse.navbar-collapse#menu-g
+			nav.nav-collapse.text-center.collapse.navbar-collapse#menu-g
 				ul.list-inline
-					li
-						a.underline(href="#inicio") Inicio
-					li
-						a.underline(href="#introduccion") Acerca de mí
-					li
-						a.underline(href="#porqueelegirme") Habilidades
+					li.menu-item
+						a.underline(href="#inicio" data-scroll) Inicio
+					li.menu-item
+						a.underline(href="#introduccion" data-scroll) Acerca de mí
+					li.menu-item
+						a.underline(href="#porqueelegirme" data-scroll) Habilidades
 						//- ¿Porqué escogerme?
-					li
-						a.underline(href="#miTrabajo") Mi trabajo
-					li
-						a.underline(href="#contactame") Contactame
+					li.menu-item
+						a.underline(href="#miTrabajo" data-scroll) Mi trabajo
+					li.menu-item
+						a.underline(href="#contactame" data-scroll) Contactame
 		section#inicio
 			.container
 				.row.hero-section.text-center
@@ -175,3 +176,7 @@ html(lang="en")
 							i.fa.fa-linkedin.btn
 						//- .row
 						//- 	img(src="img/estampilla.png")		
+
+		//- script(src="js/fastclick.js")
+		//- script(src="js/scroll.js")
+		//- script(src="js/fixed-responsive-nav.js")

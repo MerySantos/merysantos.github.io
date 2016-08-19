@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rhodium+Libre" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet" type="text/css"><link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
+    <script src="js/responsive-nav.js"></script>
     <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -36,16 +37,16 @@
   <body class="background-all">
     <section id="menu" class="navbar">
       <div class="navbar-header visible-xs">
-        <button type="button" data-toggle="collapse" data-target="#menu-g" aria-expanded="false" class="navbar-toggle collapsed"><i class="fa fa-bars"></i></button><a href="#inicio"><img src="img/favicon.png" width="70px" style="margin-left:10px;margin-top:5px;"></a>
+        <button type="button" data-toggle="collapse" data-target="#menu-g" aria-expanded="false" data-scroll class="logo navbar-toggle collapsed"><i class="fa fa-bars"></i></button><a href="#inicio"><img src="img/favicon.png" width="70px" style="margin-left:10px;margin-top:5px;"></a>
       </div>
-      <nav id="menu-g" class="text-center collapse navbar-collapse">
+      <nav id="menu-g" class="nav-collapse text-center collapse navbar-collapse">
         <ul class="list-inline">
-          <li><a href="#inicio" class="underline">Inicio</a></li>
-          <li><a href="#introduccion" class="underline">Acerca de mí</a></li>
-          <li><a href="#porqueelegirme" class="underline">Habilidades</a>
+          <li class="menu-item"><a href="#inicio" data-scroll class="underline">Inicio</a></li>
+          <li class="menu-item"><a href="#introduccion" data-scroll class="underline">Acerca de mí</a></li>
+          <li class="menu-item"><a href="#porqueelegirme" data-scroll class="underline">Habilidades</a>
           </li>
-          <li><a href="#miTrabajo" class="underline">Mi trabajo</a></li>
-          <li><a href="#contactame" class="underline">Contactame</a></li>
+          <li class="menu-item"><a href="#miTrabajo" data-scroll class="underline">Mi trabajo</a></li>
+          <li class="menu-item"><a href="#contactame" data-scroll class="underline">Contactame</a></li>
         </ul>
       </nav>
     </section>
