@@ -231,7 +231,8 @@ h1{font-family: 'Rhodium Libre',serif; text-align: center;}
     background: url(../img/pin-rosado.png) ; 
     background-size: cover;}
   
-  #miTrabajo i{font-size:2.5em ;color:brown;}
+  #miTrabajo i{font-size:2.6em ;color:brown; }
+  #miTrabajo i:hover{transition:0.4s;color:#240A03;}
   #miTrabajo .trabajos{font-size:0.9em;}
   #miTrabajo .titulo-trabajo{font-weight: bolder;}
   #miTrabajo .trabajo1>a span{background-image: url(../img/cp-trabajo1.jpg);}
@@ -240,9 +241,9 @@ h1{font-family: 'Rhodium Libre',serif; text-align: center;}
   #miTrabajo .trabajo4>a span{background-image: url(../img/cp-trabajo1.jpg);}
   #miTrabajo .trabajo5>a span{background-image: url(../img/cp-trabajo1.jpg);}
   #miTrabajo .trabajo6>a span{background-image: url(../img/cp-trabajo1.jpg);}
-  #miTrabajo .trabajo1>div, #miTrabajo .trabajo4>div{padding: 45px 20px;background-image: url(../img/trabajo1.png);background-size: cover; width: 280px; height: 280px;margin:-180px auto 40px -12%;}
-  #miTrabajo .trabajo2>div, #miTrabajo .trabajo5>div{padding: 39px 20px;background-image: url(../img/trabajo2.png);background-size: cover; width: 280px; height: 280px;margin:-180px auto 40px 14%;}
-  #miTrabajo .trabajo3>div, #miTrabajo .trabajo6>div{padding: 45px 23px;background-image: url(../img/trabajo3.png);background-size: cover; width: 280px; height: 280px;margin:-180px auto 40px 20%;}
+  #miTrabajo .trabajo1>div, #miTrabajo .trabajo4>div{padding: 45px 23px;background-image: url(../img/trabajo1.png);background-size: cover; width: 280px; height: 280px;margin:-180px auto 40px -12%;}
+  #miTrabajo .trabajo2>div, #miTrabajo .trabajo5>div{padding: 39px 30px;background-image: url(../img/trabajo2.png);background-size: cover; width: 280px; height: 280px;margin:-180px auto 40px 14%;}
+  #miTrabajo .trabajo3>div, #miTrabajo .trabajo6>div{padding: 45px 32px;background-image: url(../img/trabajo3.png);background-size: cover; width: 280px; height: 280px;margin:-180px auto 40px 20%;}
   #miTrabajo .container> :first-child{ margin: 8% auto 0;}
   /*#miTrabajo .col-md-4{ height: 10%;}*/ 
 
@@ -266,6 +267,7 @@ h1{font-family: 'Rhodium Libre',serif; text-align: center;}
   #contactame .foto-contactame{margin:-25em auto auto auto;}
 
   #contactame .contacto{padding:3%;background: url(../img/link2.png) center ;background-size: cover; }
+  #contactame .contacto i:hover{ transition:0.4s;color:#240A03; }
   #contactame a span div{position:relative; top:-15%; left:50%; height:15%; width:19%;  background: url(../img/pin-amarillo.png) ; background-size: cover;}  
   #contactame i{font-size:5em ;color:brown; }
   #contactame .contacto>a{width: 40%; margin:5% auto 5% 29%;}
@@ -293,7 +295,7 @@ h1{font-family: 'Rhodium Libre',serif; text-align: center;}
     #porqueelegirme .habilidad-papel{height: 30em; width: 20em;}
     #miTrabajo .trabajo3>div, #miTrabajo .trabajo6>div{margin:-180px auto 40px 18%;}
     #miTrabajo .trabajo2>div, #miTrabajo .trabajo5>div{margin:-180px auto 40px 18%;}
-    #miTrabajo .trabajo1>div, #miTrabajo .trabajo4>div{margin:-180px auto 40px 20%;}
+    #miTrabajo .trabajo1>div, #miTrabajo .trabajo4>div{margin:-180px auto 40px 25%;}
     #miTrabajo .trabajos>div{width:245px; height: 245px;}
     #contactame .foto-contactame>a span{ width: 85%; height: 350px;}
     #contactame .texto-contactame{left:5%;transform: rotate(-3deg);  width: 80%;height: 310px;}
