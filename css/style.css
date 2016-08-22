@@ -182,7 +182,7 @@ h1{font-family: 'Rhodium Libre',serif; text-align: center;}
     background-image: url(../img/fondo-texto-about-me3.png) ;
     background-size:cover; 
     height: 550px;
-    padding:14% 15%;
+    padding:14% 85px;
     font-size: 1.1em;
   }
   #introduccion #foto-about-me span p:after{
@@ -290,7 +290,7 @@ h1{font-family: 'Rhodium Libre',serif; text-align: center;}
     }
     #inicio h1{ font-size: 5.2em; margin-top: 20%; }
     #introduccion .texto-about-me p{font-size: 1.2em; } 
-    #introduccion .texto-about-me { padding: 14% 2% 14% 25%;  } 
+    #introduccion .texto-about-me { padding: 14% 10% 14% 80px;  } 
     #introduccion #foto-about-me a span{width: 270px;height: 350px;}
     #porqueelegirme .habilidad-papel{height: 30em; width: 20em;}
     #miTrabajo .trabajo3>div, #miTrabajo .trabajo6>div{margin:-180px auto 40px 18%;}
