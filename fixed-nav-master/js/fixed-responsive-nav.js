@@ -126,6 +126,8 @@
       e.preventDefault();
       wasNavigationTapped = true;
 
+      
+
       // Select first navigation item
       selectActiveMenuItem(0);
 

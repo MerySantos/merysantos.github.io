@@ -52,16 +52,16 @@ html(lang="en")
 			nav.nav-collapse.text-center.collapse.navbar-collapse#menu-g
 				ul.list-inline
 					li.menu-item
-						a.underline(href="#inicio" data-scroll) Inicio
+						a.underline(data-toggle="collapse" data-target="#menu-g" href="#inicio" data-scroll) Inicio
 					li.menu-item
-						a.underline(href="#introduccion" data-scroll) Acerca de mí
+						a.underline( data-toggle="collapse"  data-target="#menu-g" href="#introduccion" data-scroll) Acerca de mí
 					li.menu-item
-						a.underline(href="#porqueelegirme" data-scroll) Habilidades
+						a.underline(data-toggle="collapse" data-target="#menu-g" href="#porqueelegirme" data-scroll) Habilidades
 						//- ¿Porqué escogerme?
 					li.menu-item
-						a.underline(href="#miTrabajo" data-scroll) Mi trabajo
+						a.underline(data-toggle="collapse" data-target="#menu-g" href="#miTrabajo" data-scroll) Mi trabajo
 					li.menu-item
-						a.underline(href="#contactame" data-scroll) Contactame
+						a.underline(data-toggle="collapse"  data-target="#menu-g" href="#contactame" data-scroll) Contactame
 		section#inicio
 			.container
 				.row.hero-section.text-center
@@ -90,6 +90,10 @@ html(lang="en")
 				.row.visible-xs
 					h1 HABILIDADES
 				.row
+					.col-md-6.medidas-hoja-hab.text-center.visible-xs
+						.habilidad-papel.p-rl
+							p.p-rl  ¿POR QUÉ 
+								p.p-rl ESCOGERME?
 					.col-md-3
 						.row
 							.habilidad1.medidas-hab
@@ -104,7 +108,7 @@ html(lang="en")
 										li Visual Basic
 										li Java
 					
-					.col-md-6.medidas-hoja-hab.text-center
+					.col-md-6.medidas-hoja-hab.text-center.hidden-xs
 						.habilidad-papel.p-rl
 							p.p-rl  ¿POR QUÉ 
 								p.p-rl ESCOGERME?
@@ -127,7 +131,7 @@ html(lang="en")
 					h1 MIS TRABAJOS
 				.row.text-center
 					.col-md-4.trabajos.trabajo1
-						a(href="http://merysantos.github.io/Agency-theme/") .
+						a(href="http://merysantos.github.io/Agency-theme/" target="_blank") .
 						//- Stick
 						div.texto-trabajo1.p-rl
 							div.p-rl
@@ -136,13 +140,13 @@ html(lang="en")
 								a.btn(href="http://merysantos.github.io/Agency-theme/")
 									i.fa.fa-github.btn
 					.col-md-4.trabajos.trabajo2
-						a(href="http://merysantos.github.io/Wsp-Chat/public/") .
+						a(href="http://merysantos.github.io/Wsp-Chat/public/" target="_blank") .
 						//- Stic
 						div.texto-trabajo2.p-rl
 							div.p-rl
 								p.titulo-trabajo WHATSAPP
 								p Proyecto simulatorio de WhatsApp usando NodeJS
-								a.btn(href="http://merysantos.github.io/Wsp-Chat/public/" role="button")
+								a.btn(href="http://merysantos.github.io/Wsp-Chat/public/" role="button" target="_blank")
 									i.fa.fa-github.btn
 						
 					.col-md-4.trabajos.trabajo3

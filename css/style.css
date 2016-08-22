@@ -21,7 +21,7 @@ h1{font-family: 'Rhodium Libre',serif; text-align: center;}
 /*Inicio*/
   .hero-section{ margin-top: 5%;  margin-bottom: 3%;}
   .hero-section h1{ margin:8% auto 0;  font-size: 6.5em; }
-  .hero-section h4{ font-family: 'Arimo', sans-serif-serif; font-size: 1.8em; margin: 0 auto 3%; }
+  .hero-section h4{ font-family: 'Caveat', sans-serif-serif; font-size: 1.8em; margin: 0 auto 3%; }
 
 /*.tira-fotos*/
   #hero-section{position: relative;bottom: 0;}
@@ -301,4 +301,8 @@ h1{font-family: 'Rhodium Libre',serif; text-align: center;}
     #contactame .texto-contactame{left:5%;transform: rotate(-3deg);  width: 80%;height: 310px;}
     #contactame .foto-contactame{margin:2em auto auto auto;}
     #contactame .texto-contactame>div{left:10%;width:80%;}
+
+   .letter-container span.char3,.letter-container span.char4{ display: none; }
+   .letter-container span.char5{ background-image: url(../img/4.jpg);}
+   #contactame .texto-contactame{background-image: url(../img/carta-contactame2.png) ;}
   }

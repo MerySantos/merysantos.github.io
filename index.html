@@ -41,12 +41,12 @@
       </div>
       <nav id="menu-g" class="nav-collapse text-center collapse navbar-collapse">
         <ul class="list-inline">
-          <li class="menu-item"><a href="#inicio" data-scroll class="underline">Inicio</a></li>
-          <li class="menu-item"><a href="#introduccion" data-scroll class="underline">Acerca de mí</a></li>
-          <li class="menu-item"><a href="#porqueelegirme" data-scroll class="underline">Habilidades</a>
+          <li class="menu-item"><a data-toggle="collapse" data-target="#menu-g" href="#inicio" data-scroll class="underline">Inicio</a></li>
+          <li class="menu-item"><a data-toggle="collapse" data-target="#menu-g" href="#introduccion" data-scroll class="underline">Acerca de mí</a></li>
+          <li class="menu-item"><a data-toggle="collapse" data-target="#menu-g" href="#porqueelegirme" data-scroll class="underline">Habilidades</a>
           </li>
-          <li class="menu-item"><a href="#miTrabajo" data-scroll class="underline">Mi trabajo</a></li>
-          <li class="menu-item"><a href="#contactame" data-scroll class="underline">Contactame</a></li>
+          <li class="menu-item"><a data-toggle="collapse" data-target="#menu-g" href="#miTrabajo" data-scroll class="underline">Mi trabajo</a></li>
+          <li class="menu-item"><a data-toggle="collapse" data-target="#menu-g" href="#contactame" data-scroll class="underline">Contactame</a></li>
         </ul>
       </nav>
     </section>
@@ -85,6 +85,13 @@
           <h1>HABILIDADES</h1>
         </div>
         <div class="row">
+          <div class="col-md-6 medidas-hoja-hab text-center visible-xs">
+            <div class="habilidad-papel p-rl">
+              <p class="p-rl"> ¿POR QUÉ 
+                <p class="p-rl">ESCOGERME?</p>
+              </p>
+            </div>
+          </div>
           <div class="col-md-3">
             <div class="row">
               <div class="habilidad1 medidas-hab">
@@ -105,7 +112,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 medidas-hoja-hab text-center">
+          <div class="col-md-6 medidas-hoja-hab text-center hidden-xs">
             <div class="habilidad-papel p-rl">
               <p class="p-rl"> ¿POR QUÉ 
                 <p class="p-rl">ESCOGERME?</p>
@@ -140,7 +147,7 @@
           <h1>MIS TRABAJOS</h1>
         </div>
         <div class="row text-center">
-          <div class="col-md-4 trabajos trabajo1"><a href="http://merysantos.github.io/Agency-theme/">.</a>
+          <div class="col-md-4 trabajos trabajo1"><a href="http://merysantos.github.io/Agency-theme/" target="_blank">.</a>
             <div class="texto-trabajo1 p-rl">
               <div class="p-rl">
                 <p class="titulo-trabajo">AGENCY THEME</p>
@@ -148,11 +155,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 trabajos trabajo2"><a href="http://merysantos.github.io/Wsp-Chat/public/">.</a>
+          <div class="col-md-4 trabajos trabajo2"><a href="http://merysantos.github.io/Wsp-Chat/public/" target="_blank">.</a>
             <div class="texto-trabajo2 p-rl">
               <div class="p-rl">
                 <p class="titulo-trabajo">WHATSAPP</p>
-                <p>Proyecto simulatorio de WhatsApp usando NodeJS</p><a href="http://merysantos.github.io/Wsp-Chat/public/" role="button" class="btn"><i class="fa fa-github btn"></i></a>
+                <p>Proyecto simulatorio de WhatsApp usando NodeJS</p><a href="http://merysantos.github.io/Wsp-Chat/public/" role="button" target="_blank" class="btn"><i class="fa fa-github btn"></i></a>
               </div>
             </div>
           </div>
